@@ -19,7 +19,7 @@ const Hero = () => {
           alt="Abidjan Skyline"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/85 to-navy/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-900/80 via-amber-800/70 to-amber-700/60" />
       </div>
 
       {/* Content */}
