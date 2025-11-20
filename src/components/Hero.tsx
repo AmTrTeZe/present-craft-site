@@ -12,14 +12,13 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Image */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
           alt="Abidjan Skyline"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-900/80 via-amber-800/70 to-amber-700/60" />
       </div>
 
       {/* Content */}
@@ -44,7 +43,7 @@ const Hero = () => {
               size="lg"
               variant="outline"
               onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
-              className="text-white border-white hover:bg-white/10 text-lg px-8"
+              className="bg-transparent text-white border-white hover:bg-white hover:text-primary text-lg px-8"
             >
               Découvrir nos services
             </Button>
