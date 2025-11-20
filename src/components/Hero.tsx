@@ -24,10 +24,10 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 pt-20">
         <div className="max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-semibold text-white mb-6 animate-fade-in">
             Consulting & Business Engineering
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 animate-fade-in-delay">
+          <p className="text-xl md:text-2xl font-light text-white/90 mb-8 animate-fade-in-delay">
             Votre partenaire stratégique pour l'implantation et le développement de votre entreprise en Côte d'Ivoire
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-delay-2">
