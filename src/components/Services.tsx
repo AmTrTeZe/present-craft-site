@@ -1,25 +1,20 @@
 import { Card } from "@/components/ui/card";
-import { Building2, Users, FileCheck, TrendingUp } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Building2,
       title: "Représentation Institutionnelle",
       description: "Nous sommes votre interface avec les ministères, les agences gouvernementales et les autorités sectorielles.",
     },
     {
-      icon: Users,
       title: "Conduite des Négociations",
       description: "Nous menons pour votre compte les négociations avec les partenaires publics et privés, en maîtrisant les codes culturels locaux.",
     },
     {
-      icon: FileCheck,
       title: "Gestion Administrative",
       description: "Nous pilotons l'ensemble du parcours administratif, assurons le suivi des dossiers et respectons les calendriers.",
     },
     {
-      icon: TrendingUp,
       title: "Développement Stratégique",
       description: "Accompagnement complet dans votre stratégie d'implantation et de développement en Côte d'Ivoire.",
     },
@@ -46,23 +41,17 @@ const Services = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <Card
-                key={index}
-                className="p-6 hover:shadow-lg transition-shadow bg-card border-none"
-              >
-                <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center mb-4">
-                  <Icon className="text-secondary" size={24} />
-                </div>
-                <h3 className="text-xl font-bold text-card-foreground mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground">{service.description}</p>
-              </Card>
-            );
-          })}
+          {services.map((service, index) => (
+            <Card
+              key={index}
+              className="p-6 hover:shadow-lg transition-shadow bg-card border-none"
+            >
+              <h3 className="text-xl font-bold text-card-foreground mb-3">
+                {service.title}
+              </h3>
+              <p className="text-muted-foreground">{service.description}</p>
+            </Card>
+          ))}
         </div>
 
         <Card className="p-8 md:p-12 bg-primary text-primary-foreground border-none">

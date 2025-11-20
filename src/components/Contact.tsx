@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
@@ -54,23 +54,7 @@ const Contact = () => {
             </Card>
           </div>
 
-          <Card className="p-8 bg-muted border-none">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-primary mb-4">
-                Prêt à Développer Votre Entreprise en Côte d'Ivoire?
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Contactez-nous dès aujourd'hui pour discuter de votre projet et découvrir comment nous pouvons vous accompagner dans votre réussite.
-              </p>
-              <Button
-                size="lg"
-                onClick={() => window.location.href = "mailto:contact@lexafricaconsulting.ci"}
-                className="bg-secondary text-secondary-foreground hover:bg-secondary/90"
-              >
-                Envoyer un Email
-              </Button>
-            </div>
-          </Card>
+          <ContactForm />
         </div>
       </div>
     </section>
