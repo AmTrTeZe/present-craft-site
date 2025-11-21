@@ -35,23 +35,23 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection("about")} className="text-white hover:text-secondary transition-colors">
+            <button onClick={() => scrollToSection("about")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}>
               À propos
             </button>
-            <button onClick={() => scrollToSection("services")} className="text-white hover:text-secondary transition-colors">
+            <button onClick={() => scrollToSection("services")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}>
               Services
             </button>
-            <button onClick={() => scrollToSection("team")} className="text-white hover:text-secondary transition-colors">
+            <button onClick={() => scrollToSection("team")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}>
               Équipe
             </button>
-            <button onClick={() => scrollToSection("contact")} className="text-white hover:text-secondary transition-colors">
+            <button onClick={() => scrollToSection("contact")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}>
               Contact
             </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white"
+            className={`md:hidden ${isScrolled ? "text-foreground" : "text-white"}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -62,16 +62,16 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
-              <button onClick={() => scrollToSection("about")} className="text-white hover:text-secondary transition-colors text-left">
+              <button onClick={() => scrollToSection("about")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}>
                 À propos
               </button>
-              <button onClick={() => scrollToSection("services")} className="text-white hover:text-secondary transition-colors text-left">
+              <button onClick={() => scrollToSection("services")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}>
                 Services
               </button>
-              <button onClick={() => scrollToSection("team")} className="text-white hover:text-secondary transition-colors text-left">
+              <button onClick={() => scrollToSection("team")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}>
                 Équipe
               </button>
-              <button onClick={() => scrollToSection("contact")} className="text-white hover:text-secondary transition-colors text-left">
+              <button onClick={() => scrollToSection("contact")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}>
                 Contact
               </button>
             </div>
