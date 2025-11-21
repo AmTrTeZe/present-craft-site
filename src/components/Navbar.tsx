@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
+import logoBlanc from "@/assets/logo-blanc.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,7 +52,11 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <img src={logo} alt="Lex Africa Consulting" className="h-12 md:h-16" />
+          <img 
+            src={isScrolled ? logo : logoBlanc} 
+            alt="Lex Africa Consulting" 
+            className="h-12 md:h-16 transition-opacity duration-300" 
+          />
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
