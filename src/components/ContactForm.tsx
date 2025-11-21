@@ -51,7 +51,7 @@ const ContactForm = () => {
     <Card className="p-8 bg-muted border-none">
       <div className="text-center mb-8">
         <h3 className="text-2xl font-bold text-primary mb-4">
-          Prêt à Développer Votre Entreprise en Côte d'Ivoire?
+          Un projet de développement en Côte d'Ivoire ?
         </h3>
         <p className="text-muted-foreground">
           Contactez-nous dès aujourd'hui pour discuter de votre projet
