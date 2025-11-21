@@ -100,7 +100,7 @@ const TeamExpertise = () => {
         <div className="space-y-16">
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-              Une expertise éprouvée à l'international
+              Une expertise éprouvée
             </h3>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
               Nos consultants seniors ont collectivement accompagné des projets d'infrastructure et de développement représentant plus de 5 milliards d'euros en Afrique et en Europe.
