@@ -40,6 +40,12 @@ const Services = () => {
           </p>
         </div>
 
+        <div className="mb-12 max-w-4xl mx-auto">
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Notre expertise est reconnue par les plus grandes institutions internationales. Nos consultants interviennent régulièrement comme experts auprès de la Banque Mondiale, de la Banque Africaine de Développement et des agences des Nations Unies. Cette reconnaissance institutionnelle garantit que nos méthodes et nos standards répondent aux exigences les plus élevées du secteur.
+          </p>
+        </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {services.map((service, index) => (
             <Card

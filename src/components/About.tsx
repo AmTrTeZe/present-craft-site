@@ -30,7 +30,7 @@ const About = () => {
             <p className="text-muted-foreground mb-6">
               Lex Africa Consulting fournit des services aux standards des cabinets internationaux les plus réputés, tout en restant réactif et pragmatique.
             </p>
-            <div className="space-y-4">
+            <div className="space-y-4 mb-6">
               {values.map((value, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
@@ -38,6 +38,9 @@ const About = () => {
                 </div>
               ))}
             </div>
+            <p className="text-muted-foreground leading-relaxed">
+              Notre approche combine les standards internationaux des cabinets de conseil de premier plan avec une connaissance opérationnelle des réalités locales. Nous appliquons les méthodologies de la Banque Mondiale et des institutions de développement tout en les adaptant pragmatiquement au contexte ivoirien.
+            </p>
           </Card>
         </div>
       </div>

@@ -45,9 +45,17 @@ const Team = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             Notre Équipe
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Une équipe pluridisciplinaire de consultants seniors combinant formations d'excellence, expérience internationale et connaissance approfondie des réalités africaines
           </p>
+          <div className="max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-primary mb-4">
+              Une expertise reconnue internationalement
+            </h3>
+            <p className="text-lg text-muted-foreground">
+              Nos consultants sont régulièrement sollicités comme experts par les organisations internationales majeures et contribuent à l'élaboration de standards et lignes directrices en matière de PPP et d'investissements en Afrique.
+            </p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
