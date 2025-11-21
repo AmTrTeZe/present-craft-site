@@ -126,7 +126,7 @@ const ContactForm = () => {
           type="submit"
           size="lg"
           disabled={isSubmitting}
-          className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90"
+          className="w-full bg-secondary text-white hover:bg-secondary/90"
         >
           {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
         </Button>
