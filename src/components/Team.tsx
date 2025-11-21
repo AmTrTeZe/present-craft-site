@@ -248,14 +248,14 @@ const TeamExpertise = () => {
             <p className="text-muted-foreground mb-6">
               Nos équipes appliquent les standards internationaux de :
             </p>
-            <div className="flex flex-wrap items-center gap-4 mb-8 text-foreground">
-              <span>Banque Mondiale & SFI (IFC)</span>
-              <div className="h-6 w-px bg-border"></div>
-              <span>Banque Africaine de Développement</span>
-              <div className="h-6 w-px bg-border"></div>
-              <span>Commission Économique des Nations Unies pour l'Europe</span>
-              <div className="h-6 w-px bg-border"></div>
-              <span>Union Européenne</span>
+            <div className="flex items-center gap-4 mb-8 text-foreground overflow-x-auto">
+              <span className="whitespace-nowrap">Banque Mondiale & SFI (IFC)</span>
+              <div className="h-6 w-px bg-border shrink-0"></div>
+              <span className="whitespace-nowrap">Banque Africaine de Développement</span>
+              <div className="h-6 w-px bg-border shrink-0"></div>
+              <span className="whitespace-nowrap">Commission Économique des Nations Unies pour l'Europe</span>
+              <div className="h-6 w-px bg-border shrink-0"></div>
+              <span className="whitespace-nowrap">Union Européenne</span>
             </div>
 
           </Card>
