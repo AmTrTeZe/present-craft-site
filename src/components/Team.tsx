@@ -248,7 +248,7 @@ const TeamExpertise = () => {
             <p className="text-muted-foreground mb-6">
               Nos équipes appliquent les standards internationaux de :
             </p>
-            <div className="flex items-center gap-4 mb-8 text-foreground overflow-x-auto">
+            <div className="flex items-center gap-2 md:gap-4 mb-8 text-foreground text-sm md:text-base flex-wrap justify-center">
               <span className="whitespace-nowrap">Banque Mondiale & SFI (IFC)</span>
               <div className="h-6 w-px bg-border shrink-0"></div>
               <span className="whitespace-nowrap">Banque Africaine de Développement</span>
