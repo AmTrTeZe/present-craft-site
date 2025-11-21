@@ -17,6 +17,12 @@ const Navbar = () => {
       const sections = ["about", "services", "team", "contact"];
       const scrollPosition = window.scrollY + 100;
       
+      // Reset active section if we're at the top (on Hero)
+      if (window.scrollY < window.innerHeight * 0.5) {
+        setActiveSection("");
+        return;
+      }
+      
       for (const sectionId of sections) {
         const element = document.getElementById(sectionId);
         if (element) {
