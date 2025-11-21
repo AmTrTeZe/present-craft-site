@@ -3,10 +3,22 @@ import { CheckCircle2 } from "lucide-react";
 
 const About = () => {
   const values = [
-    "Excellence internationale et réactivité locale",
-    "Équipe pluridisciplinaire senior",
-    "Expertise approfondie du contexte africain",
-    "Méthode de travail pragmatique et agile",
+    {
+      title: "Intégrité et conformité",
+      description: "Nous opérons dans le strict respect des réglementations locales et des standards éthiques internationaux. Notre réputation repose sur la transparence de nos pratiques."
+    },
+    {
+      title: "Efficacité opérationnelle",
+      description: "Structure légère, circuits de décision courts, réactivité maximale. Nous privilégions l'action et les résultats mesurables sur les processus bureaucratiques."
+    },
+    {
+      title: "Confidentialité absolue",
+      description: "Discrétion totale sur vos projets, vos stratégies et vos négociations. Nous protégeons vos intérêts comme les nôtres."
+    },
+    {
+      title: "Partenariat de long terme",
+      description: "Au-delà des missions ponctuelles, nous construisons des relations durables fondées sur la confiance mutuelle et la compréhension de vos enjeux stratégiques."
+    }
   ];
 
   return (
@@ -27,20 +39,14 @@ const About = () => {
 
           <Card className="p-8 bg-muted border-none">
             <h3 className="text-2xl font-bold text-primary mb-6">Nos Valeurs</h3>
-            <p className="text-muted-foreground mb-6">
-              Lex Africa Consulting fournit des services aux standards des cabinets internationaux les plus réputés, tout en restant réactif et pragmatique.
-            </p>
-            <div className="space-y-4 mb-6">
+            <div className="space-y-6">
               {values.map((value, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{value}</span>
+                <div key={index}>
+                  <h4 className="text-lg font-bold text-foreground mb-2">{value.title}</h4>
+                  <p className="text-muted-foreground leading-relaxed">{value.description}</p>
                 </div>
               ))}
             </div>
-            <p className="text-muted-foreground leading-relaxed">
-              Notre approche combine les standards internationaux des cabinets de conseil de premier plan avec une connaissance opérationnelle des réalités locales. Nous appliquons les méthodologies de la Banque Mondiale et des institutions de développement tout en les adaptant pragmatiquement au contexte ivoirien.
-            </p>
           </Card>
         </div>
       </div>
