@@ -35,6 +35,12 @@ const About = () => {
             <p className="text-lg text-muted-foreground mb-6">
               Nos experts, seniors, pluridisciplinaires, diplômés des meilleures écoles françaises et ivoiriennes, œuvrent dans la plus grande complémentarité. Forts d'une expérience locale et internationale, ils font preuve d'une connaissance approfondie du contexte africain, des réglementations et procédures locales.
             </p>
+            <p className="text-lg text-muted-foreground mb-6">
+              Nous nous positionnons comme le chaînon manquant entre les entreprises internationales et le marché ivoirien : ni un cabinet d'avocats classique, ni un simple consultant, mais votre représentant local capable d'agir pour votre compte dans toutes vos démarches stratégiques et opérationnelles.
+            </p>
+            <p className="text-lg text-muted-foreground mb-6">
+              Nous accompagnons des promoteurs de projets, des investisseurs institutionnels, des opérateurs internationaux, des entrepreneurs, des entités gouvernementales, des entreprises locales, des PME et des startups dans leurs projets de développement en Côte d'Ivoire et en Afrique de l'Ouest.
+            </p>
           </div>
 
           <Card className="p-8 bg-muted border-none">
