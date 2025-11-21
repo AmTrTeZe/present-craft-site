@@ -229,7 +229,7 @@ const TeamExpertise = () => {
             <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">
               Secteurs d'intervention
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {sectors.map((sector, index) => (
                 <Card key={index} className="p-6 bg-background border-none shadow-sm">
                   <h4 className="text-lg font-bold text-card-foreground mb-2">
