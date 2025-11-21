@@ -22,8 +22,7 @@ const Contact = () => {
                 <Phone className="text-secondary" size={24} />
               </div>
               <h3 className="font-bold text-card-foreground mb-2">Téléphone</h3>
-              <p className="text-sm text-muted-foreground mb-1">(225) 07 58 60 60 40</p>
-              <p className="text-sm text-muted-foreground">(225) 01 02 84 55 55</p>
+              <p className="text-sm text-muted-foreground">(225) 07 58 60 60 40</p>
             </Card>
 
             <Card className="p-6 text-center hover:shadow-lg transition-shadow bg-card border-none">
@@ -33,7 +32,7 @@ const Contact = () => {
               <h3 className="font-bold text-card-foreground mb-2">Email</h3>
               <a
                 href="mailto:contact@lexafricaconsulting.ci"
-                className="text-sm text-secondary hover:underline"
+                className="text-sm text-foreground hover:text-secondary transition-colors"
               >
                 contact@lexafricaconsulting.ci
               </a>
