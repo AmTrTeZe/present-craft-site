@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="text-center">
           <div className="text-2xl font-bold mb-2">
-            Lex Africa <span className="font-extralight">Consulting</span>
+            Lex Africa Consulting
           </div>
           <p className="text-white/90 text-sm font-extralight mb-4">
             Consulting & Business Engineering
