@@ -30,7 +30,7 @@ const Team = () => {
   ];
 
   const sectors = [
-    { title: "Infrastructure & Transport", description: "Routes, autoroutes, rail, mobilité urbaine, ports, aéroports" },
+    { title: "Infrastructure & Transport", description: "Routes, autoroutes, ponts, rail, mobilité urbaine, ports, aéroports" },
     { title: "Énergie", description: "Production électrique, transport & distribution, électrification rurale" },
     { title: "Services Publics", description: "Eau & assainissement, gestion des déchets, services urbains" },
     { title: "Industries Extractives", description: "Pétrole, gaz, mines" },
@@ -88,7 +88,7 @@ export { TeamExpertise };
 
 const TeamExpertise = () => {
   const sectors = [
-    { title: "Infrastructure & Transport", description: "Routes, autoroutes, rail, mobilité urbaine, ports, aéroports" },
+    { title: "Infrastructure & Transport", description: "Routes, autoroutes, ponts, rail, mobilité urbaine, ports, aéroports" },
     { title: "Énergie", description: "Production électrique, transport & distribution, électrification rurale" },
     { title: "Services Publics", description: "Eau & assainissement, gestion des déchets, services urbains" },
     { title: "Industries Extractives", description: "Pétrole, gaz, mines" },
