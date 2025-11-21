@@ -56,7 +56,7 @@ const Team = () => {
             Notre Équipe
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Une équipe pluridisciplinaire de consultants seniors combinant formations d'excellence, expérience internationale et connaissance approfondie des réalités africaines
+            Une équipe pluridisciplinaire de 12 consultants seniors combinant formations d'excellence, expérience internationale et connaissance approfondie des réalités africaines
           </p>
           <div className="max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold text-primary mb-4">
