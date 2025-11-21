@@ -70,7 +70,7 @@ const Navbar = () => {
               onClick={() => scrollToSection("about")} 
               className={`${activeSection === "about" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}
             >
-              À propos
+              Le Cabinet
             </button>
             <button 
               onClick={() => scrollToSection("services")} 
@@ -109,7 +109,7 @@ const Navbar = () => {
                 onClick={() => scrollToSection("about")} 
                 className={`${activeSection === "about" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}
               >
-                À propos
+                Le Cabinet
               </button>
               <button 
                 onClick={() => scrollToSection("services")} 
