@@ -16,6 +16,14 @@ const Team = () => {
       description: "Magistrats de la Cour des Comptes avec une compréhension unique des processus budgétaires de l'État.",
     },
     {
+      title: "Fiscalité",
+      description: "Experts en fiscalité ivoirienne, OHADA, Code des investissements, conventions fiscales et optimisation fiscale internationale pour investisseurs étrangers.",
+    },
+    {
+      title: "Droit Social",
+      description: "Spécialistes du droit du travail ivoirien, gestion RH locale et des procédures d'emploi d'expatriés.",
+    },
+    {
       title: "Ingénierie",
       description: "Ingénieurs formés à l'École Polytechnique et à l'École Nationale des Ponts et Chaussées.",
     },
