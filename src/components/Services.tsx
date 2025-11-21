@@ -65,8 +65,8 @@ const Services = () => {
           <div className="grid md:grid-cols-2 gap-4">
             {advantages.map((advantage, index) => (
               <div key={index} className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-black shrink-0 mt-2" />
-                <span className="text-white">{advantage}</span>
+                <div className="w-2 h-2 rounded-full bg-white shrink-0 mt-2" />
+                <span className="text-white font-light">{advantage}</span>
               </div>
             ))}
           </div>
