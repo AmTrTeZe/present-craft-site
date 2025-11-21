@@ -39,7 +39,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-20 bg-background scroll-mt-20">
+    <section id="team" className="py-20 bg-muted scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
@@ -62,31 +62,17 @@ const Team = () => {
         </div>
 
         <div className="space-y-16">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-                Une expertise éprouvée à l'international
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Nos consultants seniors ont collectivement accompagné des projets d'infrastructure et de développement représentant plus de 5 milliards d'euros en Afrique et en Europe.
-              </p>
-            </div>
-
-            <Card className="p-8 bg-muted border-none">
-              <h3 className="text-2xl font-bold text-primary mb-6">Secteurs d'intervention</h3>
-              <div className="space-y-4">
-                {sectors.map((sector, index) => (
-                  <div key={index}>
-                    <h4 className="font-bold text-foreground mb-1">{sector.title}</h4>
-                    <p className="text-sm text-muted-foreground">{sector.description}</p>
-                  </div>
-                ))}
-              </div>
-            </Card>
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+              Une expertise éprouvée à l'international
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+              Nos consultants seniors ont collectivement accompagné des projets d'infrastructure et de développement représentant plus de 5 milliards d'euros en Afrique et en Europe.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
-            <Card className="p-8 bg-muted border-none">
+            <Card className="p-8 bg-background border-none shadow-sm">
               <h3 className="text-2xl font-bold text-primary mb-6">
                 Structuration et négociation de grands projets
               </h3>
@@ -113,7 +99,7 @@ const Team = () => {
               </div>
             </Card>
 
-            <Card className="p-8 bg-muted border-none">
+            <Card className="p-8 bg-background border-none shadow-sm">
               <h3 className="text-2xl font-bold text-primary mb-6">
                 Conseil aux institutions financières
               </h3>
@@ -140,7 +126,7 @@ const Team = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
-            <Card className="p-8 bg-muted border-none">
+            <Card className="p-8 bg-background border-none shadow-sm">
               <h3 className="text-2xl font-bold text-primary mb-6">
                 Accompagnement d'entreprises internationales
               </h3>
@@ -165,7 +151,7 @@ const Team = () => {
               </div>
             </Card>
 
-            <Card className="p-8 bg-muted border-none">
+            <Card className="p-8 bg-background border-none shadow-sm">
               <h3 className="text-2xl font-bold text-primary mb-6">
                 Expertise institutionnelle reconnue
               </h3>
@@ -191,7 +177,23 @@ const Team = () => {
             </Card>
           </div>
 
-          <Card className="p-8 bg-muted border-none">
+          <div>
+            <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">
+              Secteurs d'intervention
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              {sectors.map((sector, index) => (
+                <Card key={index} className="p-6 bg-background border-none shadow-sm">
+                  <h4 className="text-lg font-bold text-card-foreground mb-2">
+                    {sector.title}
+                  </h4>
+                  <p className="text-sm text-muted-foreground">{sector.description}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          <Card className="p-8 bg-background border-none shadow-sm">
             <h3 className="text-2xl font-bold text-primary mb-6">
               Standards et méthodologie
             </h3>
