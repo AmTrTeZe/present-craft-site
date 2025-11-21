@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-image-new.jpg";
-import logoBlanc from "@/assets/logo-blanc.png";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -25,7 +24,6 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 pt-20">
         <div className="max-w-4xl">
-          <img src={logoBlanc} alt="Lex Africa Consulting" className="h-16 md:h-20 mb-8 animate-fade-in" />
           <h1 className="text-5xl md:text-7xl font-semibold text-white mb-6 animate-fade-in">
             Consulting & Business Engineering
           </h1>
