@@ -68,7 +68,7 @@ const Team = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {expertise.map((item, index) => (
             <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow bg-card border-none">
               <h3 className="text-lg font-bold text-card-foreground mb-2">
