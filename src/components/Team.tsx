@@ -247,17 +247,6 @@ const TeamExpertise = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center justify-items-center pt-6 border-t border-border">
-              {institutions.map((institution, index) => (
-                <div key={index} className="flex items-center justify-center">
-                  <img 
-                    src={institution.logo} 
-                    alt={institution.name}
-                    className="h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                  />
-                </div>
-              ))}
-            </div>
           </Card>
         </div>
       </div>
