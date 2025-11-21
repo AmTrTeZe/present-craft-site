@@ -34,6 +34,8 @@ const Team = () => {
     { title: "Énergie", description: "Production électrique, transport & distribution, électrification rurale" },
     { title: "Services Publics", description: "Eau & assainissement, gestion des déchets, services urbains" },
     { title: "Industries Extractives", description: "Pétrole, gaz, mines" },
+    { title: "Télécommunications", description: "Infrastructures numériques, réseaux mobiles & fixes, data centers, fibre optique, licences d'opérateur, régulation sectorielle" },
+    { title: "Startups & Innovation", description: "Accompagnement juridique et fiscal, levées de fonds, structuration corporate, due diligence investisseurs, propriété intellectuelle, exit strategy" },
   ];
 
   const institutions = [
@@ -90,6 +92,8 @@ const TeamExpertise = () => {
     { title: "Énergie", description: "Production électrique, transport & distribution, électrification rurale" },
     { title: "Services Publics", description: "Eau & assainissement, gestion des déchets, services urbains" },
     { title: "Industries Extractives", description: "Pétrole, gaz, mines" },
+    { title: "Télécommunications", description: "Infrastructures numériques, réseaux mobiles & fixes, data centers, fibre optique, licences d'opérateur, régulation sectorielle" },
+    { title: "Startups & Innovation", description: "Accompagnement juridique et fiscal, levées de fonds, structuration corporate, due diligence investisseurs, propriété intellectuelle, exit strategy" },
   ];
 
   const institutions = [
