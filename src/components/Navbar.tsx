@@ -6,11 +6,31 @@ import logo from "@/assets/logo.png";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
+      
+      // Detect which section is currently visible
+      const sections = ["about", "services", "team", "contact"];
+      const scrollPosition = window.scrollY + 100;
+      
+      for (const sectionId of sections) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetBottom = offsetTop + element.offsetHeight;
+          
+          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+            setActiveSection(sectionId);
+            break;
+          }
+        }
+      }
     };
+    
+    handleScroll(); // Initial check
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -35,16 +55,28 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection("about")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}>
+            <button 
+              onClick={() => scrollToSection("about")} 
+              className={`${activeSection === "about" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}
+            >
               À propos
             </button>
-            <button onClick={() => scrollToSection("services")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}>
+            <button 
+              onClick={() => scrollToSection("services")} 
+              className={`${activeSection === "services" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}
+            >
               Services
             </button>
-            <button onClick={() => scrollToSection("team")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}>
+            <button 
+              onClick={() => scrollToSection("team")} 
+              className={`${activeSection === "team" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}
+            >
               Équipe
             </button>
-            <button onClick={() => scrollToSection("contact")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}>
+            <button 
+              onClick={() => scrollToSection("contact")} 
+              className={`${activeSection === "contact" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}
+            >
               Contact
             </button>
           </div>
@@ -62,16 +94,28 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
-              <button onClick={() => scrollToSection("about")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}>
+              <button 
+                onClick={() => scrollToSection("about")} 
+                className={`${activeSection === "about" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}
+              >
                 À propos
               </button>
-              <button onClick={() => scrollToSection("services")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}>
+              <button 
+                onClick={() => scrollToSection("services")} 
+                className={`${activeSection === "services" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}
+              >
                 Services
               </button>
-              <button onClick={() => scrollToSection("team")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}>
+              <button 
+                onClick={() => scrollToSection("team")} 
+                className={`${activeSection === "team" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}
+              >
                 Équipe
               </button>
-              <button onClick={() => scrollToSection("contact")} className={`${isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}>
+              <button 
+                onClick={() => scrollToSection("contact")} 
+                className={`${activeSection === "contact" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}
+              >
                 Contact
               </button>
             </div>
