@@ -39,7 +39,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-20 bg-muted scroll-mt-20">
+    <section id="team" className="py-20 bg-background scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
@@ -50,7 +50,7 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {expertise.map((item, index) => (
             <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow bg-card border-none">
               <h3 className="text-lg font-bold text-card-foreground mb-2">
@@ -60,7 +60,35 @@ const Team = () => {
             </Card>
           ))}
         </div>
+      </div>
+    </section>
+  );
+};
 
+export default Team;
+export { TeamExpertise };
+
+const TeamExpertise = () => {
+  const sectors = [
+    { title: "Infrastructure & Transport", description: "Routes, autoroutes, rail, mobilité urbaine, ports, aéroports" },
+    { title: "Énergie", description: "Production électrique, transport & distribution, électrification rurale" },
+    { title: "Services Publics", description: "Eau & assainissement, gestion des déchets, services urbains" },
+    { title: "Industries Extractives", description: "Pétrole, gaz, mines" },
+  ];
+
+  const institutions = [
+    { name: "CEDEAO", logo: "/images/cedeao-logo.png" },
+    { name: "UEMOA", logo: "/images/uemoa-logo.png" },
+    { name: "COMESA", logo: "/images/comesa-logo.png" },
+    { name: "BAD", logo: "/images/bad-logo.png" },
+    { name: "Banque Mondiale", logo: "/images/world-bank-logo.png" },
+    { name: "Nations Unies", logo: "/images/un-logo.png" },
+    { name: "Commission Européenne", logo: "/images/eu-logo.png" },
+  ];
+
+  return (
+    <section className="py-20 bg-muted">
+      <div className="container mx-auto px-4">
         <div className="space-y-16">
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
@@ -236,5 +264,3 @@ const Team = () => {
     </section>
   );
 };
-
-export default Team;
