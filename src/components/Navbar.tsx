@@ -35,26 +35,23 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection("about")} className="text-foreground hover:text-secondary transition-colors">
+            <button onClick={() => scrollToSection("about")} className="text-white hover:text-secondary transition-colors">
               À propos
             </button>
-            <button onClick={() => scrollToSection("services")} className="text-foreground hover:text-secondary transition-colors">
+            <button onClick={() => scrollToSection("services")} className="text-white hover:text-secondary transition-colors">
               Services
             </button>
-            <button onClick={() => scrollToSection("team")} className="text-foreground hover:text-secondary transition-colors">
+            <button onClick={() => scrollToSection("team")} className="text-white hover:text-secondary transition-colors">
               Équipe
             </button>
-            <button onClick={() => scrollToSection("projects")} className="text-foreground hover:text-secondary transition-colors">
-              Projets
-            </button>
-            <Button onClick={() => scrollToSection("contact")} className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
+            <button onClick={() => scrollToSection("contact")} className="text-white hover:text-secondary transition-colors">
               Contact
-            </Button>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -65,18 +62,18 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
-              <button onClick={() => scrollToSection("about")} className="text-foreground hover:text-secondary transition-colors text-left">
+              <button onClick={() => scrollToSection("about")} className="text-white hover:text-secondary transition-colors text-left">
                 À propos
               </button>
-              <button onClick={() => scrollToSection("services")} className="text-foreground hover:text-secondary transition-colors text-left">
+              <button onClick={() => scrollToSection("services")} className="text-white hover:text-secondary transition-colors text-left">
                 Services
               </button>
-              <button onClick={() => scrollToSection("team")} className="text-foreground hover:text-secondary transition-colors text-left">
+              <button onClick={() => scrollToSection("team")} className="text-white hover:text-secondary transition-colors text-left">
                 Équipe
               </button>
-              <Button onClick={() => scrollToSection("contact")} className="bg-secondary text-secondary-foreground hover:bg-secondary/90 w-full">
+              <button onClick={() => scrollToSection("contact")} className="text-white hover:text-secondary transition-colors text-left">
                 Contact
-              </Button>
+              </button>
             </div>
           </div>
         )}
