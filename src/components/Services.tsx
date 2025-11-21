@@ -60,13 +60,13 @@ const Services = () => {
           ))}
         </div>
 
-        <Card className="p-8 md:p-12 bg-secondary text-secondary-foreground border-none">
+        <Card className="p-8 md:p-12 bg-secondary text-white border-none">
           <h3 className="text-3xl font-bold mb-6">Les Avantages de Notre Mandat</h3>
           <div className="grid md:grid-cols-2 gap-4">
             {advantages.map((advantage, index) => (
               <div key={index} className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-white shrink-0 mt-2" />
-                <span className="text-secondary-foreground/90">{advantage}</span>
+                <div className="w-2 h-2 rounded-full bg-black shrink-0 mt-2" />
+                <span className="text-white">{advantage}</span>
               </div>
             ))}
           </div>
