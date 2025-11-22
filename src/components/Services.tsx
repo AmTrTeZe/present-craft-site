@@ -22,10 +22,10 @@ const Services = () => {
 
   const advantages = [
     "Éviter les erreurs coûteuses liées à la méconnaissance du contexte local",
-    "Bénéficier de délais raccourcis grâce à notre connaissance des circuits",
-    "Réduire les risques de non-conformité réglementaire",
-    "Disposer d'une présence crédible sans investissement en structure locale",
-    "Concentrer vos ressources sur votre développement commercial",
+    "Réduire les délais grâce à notre maîtrise des processus institutionnels et notre connaissance des circuits",
+    "Sécuriser votre conformité réglementaire",
+    "Établir une présence locale crédible sans investissement en infrastructure",
+    "Concentrer vos ressources sur votre cœur de métier",
   ];
 
   return (
@@ -62,6 +62,9 @@ const Services = () => {
 
         <Card className="p-8 md:p-12 bg-secondary text-white border-none">
           <h3 className="text-3xl font-bold mb-6">Les Avantages de Notre Mandat</h3>
+          <p className="text-white font-light mb-6">
+            Notre mandat est flexible et s'adapte au stade de votre projet : représentation officielle exclusive, accompagnement ponctuel sur des dossiers spécifiques, ou partenariat continu pour vos opérations en Côte d'Ivoire.
+          </p>
           <div className="grid md:grid-cols-2 gap-4">
             {advantages.map((advantage, index) => (
               <div key={index} className="flex items-start gap-3">
