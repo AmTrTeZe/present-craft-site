@@ -2,6 +2,21 @@ import { Card } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
 
 const About = () => {
+  const distinctions = [
+    {
+      title: "Expertise Technique de Niveau International",
+      description: "Nos équipes maîtrisent l'intégralité des dimensions juridiques, réglementaires, financières et opérationnelles de l'implantation en Côte d'Ivoire. En tant que votre mandataire, nous conduisons en votre nom les négociations, formalités et interactions avec les autorités ivoiriennes."
+    },
+    {
+      title: "Maîtrise des Processus Décisionnels",
+      description: "Notre connaissance intime des circuits de validation institutionnels et des protocoles administratifs nous permet d'anticiper les obstacles, d'optimiser les délais et de sécuriser vos procédures dès la première soumission."
+    },
+    {
+      title: "Accès aux Cercles Décisionnaires",
+      description: "Nos relations établies avec les cabinets ministériels, les conseillers techniques et la haute direction des agences publiques nous permettent de positionner favorablement vos projets et de comprendre les priorités gouvernementales en temps réel."
+    }
+  ];
+
   const values = [
     {
       title: "Intégrité et conformité",
@@ -44,8 +59,22 @@ const About = () => {
           </div>
 
           <Card className="p-8 bg-muted border-none">
-            <h3 className="text-2xl font-bold text-primary mb-6">Nos Valeurs</h3>
+            <h3 className="text-2xl font-bold text-primary mb-6">Ce Qui Nous Distingue</h3>
             <div className="space-y-6">
+              {distinctions.map((distinction, index) => (
+                <div key={index}>
+                  <h4 className="text-lg font-bold text-foreground mb-2">{distinction.title}</h4>
+                  <p className="text-muted-foreground leading-relaxed">{distinction.description}</p>
+                </div>
+              ))}
+            </div>
+          </Card>
+        </div>
+
+        <div className="mt-12">
+          <Card className="p-8 bg-muted border-none">
+            <h3 className="text-2xl font-bold text-primary mb-6">Nos Valeurs</h3>
+            <div className="grid md:grid-cols-2 gap-6">
               {values.map((value, index) => (
                 <div key={index}>
                   <h4 className="text-lg font-bold text-foreground mb-2">{value.title}</h4>
