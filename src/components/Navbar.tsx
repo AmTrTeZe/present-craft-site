@@ -96,7 +96,7 @@ const Navbar = () => {
             </button>
             <button
               onClick={toggleLanguage}
-              className={`font-bold ${isScrolled ? "text-secondary" : "text-white"} hover:text-secondary transition-colors`}
+              className={`text-sm ${isScrolled ? "text-secondary" : "text-white"} hover:text-secondary transition-colors`}
             >
               {language === 'fr' ? 'EN' : 'FR'}
             </button>
@@ -141,7 +141,7 @@ const Navbar = () => {
               </button>
               <button
                 onClick={toggleLanguage}
-                className={`font-bold ${isScrolled ? "text-secondary" : "text-white"} hover:text-secondary transition-colors text-left`}
+                className={`text-sm ${isScrolled ? "text-secondary" : "text-white"} hover:text-secondary transition-colors text-left`}
               >
                 {language === 'fr' ? 'EN' : 'FR'}
               </button>
