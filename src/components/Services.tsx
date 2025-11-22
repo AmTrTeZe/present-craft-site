@@ -4,15 +4,15 @@ const Services = () => {
   const services = [
     {
       title: "Représentation Institutionnelle",
-      description: "Nous sommes votre interface avec les ministères, les agences gouvernementales et les autorités sectorielles.",
+      description: "Nous sommes votre interface avec les ministères, les agences gouvernementales et les autorités sectorielles. Nous présentons vos projets, défendons vos intérêts et facilitons vos relations avec l'administration ivoirienne.",
     },
     {
       title: "Conduite des Négociations",
-      description: "Nous menons pour votre compte les négociations avec les partenaires publics et privés, en maîtrisant les codes culturels locaux.",
+      description: "Nous menons pour votre compte les négociations avec les partenaires publics et privés, en parfaite connaissance des codes culturels locaux et des dynamiques décisionnelles.",
     },
     {
-      title: "Gestion Administrative",
-      description: "Nous pilotons l'ensemble du parcours administratif, assurons le suivi des dossiers et respectons les calendriers.",
+      title: "Gestion des Procédures Administratives",
+      description: "Nous prenons en charge l'ensemble du processus administratif, suivons les dossiers avec attention et maintenons la pression nécessaire pour garantir le respect des délais.",
     },
     {
       title: "Développement Stratégique",
