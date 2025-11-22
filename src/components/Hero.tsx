@@ -1,8 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-image-new.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations/translations";
 
 const Hero = () => {
+  const { language } = useLanguage();
+  const t = translations[language].hero;
+
   const scrollToContact = () => {
     const element = document.getElementById("contact");
     if (element) {
@@ -25,10 +30,10 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10 pt-20">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-semibold text-white mb-6 animate-fade-in">
-            Consulting & Business Engineering
+            {t.title}
           </h1>
           <p className="text-xl md:text-2xl font-light text-white/90 mb-8 animate-fade-in-delay">
-            Votre partenaire stratégique pour l'implantation et le développement de votre entreprise en Côte d'Ivoire
+            {t.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-delay-2">
             <Button
@@ -36,7 +41,7 @@ const Hero = () => {
               onClick={scrollToContact}
               className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-lg px-8"
             >
-              Nous contacter
+              {t.contactBtn}
               <ArrowRight className="ml-2" size={20} />
             </Button>
             <Button
@@ -45,7 +50,7 @@ const Hero = () => {
               onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
               className="bg-transparent text-white border-white hover:bg-white hover:text-primary text-lg px-8"
             >
-              Découvrir nos services
+              {t.servicesBtn}
             </Button>
           </div>
         </div>
