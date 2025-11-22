@@ -62,11 +62,17 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <img 
-            src={isScrolled ? logo : logoBlanc} 
-            alt="Lex Africa Consulting" 
-            className="h-12 md:h-16 transition-opacity duration-300" 
-          />
+          <button 
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="cursor-pointer"
+            aria-label="Retour en haut"
+          >
+            <img 
+              src={isScrolled ? logo : logoBlanc} 
+              alt="Lex Africa Consulting" 
+              className="h-12 md:h-16 transition-opacity duration-300" 
+            />
+          </button>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
