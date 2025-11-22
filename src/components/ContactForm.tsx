@@ -5,9 +5,13 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations/translations";
 
 const ContactForm = () => {
   const { toast } = useToast();
+  const { language } = useLanguage();
+  const t = translations[language].contact;
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
@@ -24,8 +28,8 @@ const ContactForm = () => {
     // Simulate form submission
     setTimeout(() => {
       toast({
-        title: "Message envoyé !",
-        description: "Nous vous contacterons très prochainement.",
+        title: t.successTitle,
+        description: t.successDesc,
       });
       setIsSubmitting(false);
       setFormData({
@@ -51,41 +55,41 @@ const ContactForm = () => {
     <Card className="p-8 bg-muted border-none">
       <div className="text-center mb-8">
         <h3 className="text-2xl font-bold text-primary mb-4">
-          Un projet de développement en Côte d'Ivoire ?
+          {t.formTitle}
         </h3>
         <p className="text-muted-foreground">
-          Contactez-nous dès aujourd'hui pour discuter de votre projet
+          {t.formSubtitle}
         </p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid md:grid-cols-2 gap-4">
           <div className="space-y-2">
-            <Label htmlFor="firstName">Prénom</Label>
+            <Label htmlFor="firstName">{t.firstName}</Label>
             <Input
               id="firstName"
               name="firstName"
               value={formData.firstName}
               onChange={handleChange}
               required
-              placeholder="Votre prénom"
+              placeholder={t.firstNamePlaceholder}
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="lastName">Nom</Label>
+            <Label htmlFor="lastName">{t.lastName}</Label>
             <Input
               id="lastName"
               name="lastName"
               value={formData.lastName}
               onChange={handleChange}
               required
-              placeholder="Votre nom"
+              placeholder={t.lastNamePlaceholder}
             />
           </div>
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="email">Email</Label>
+          <Label htmlFor="email">{t.email}</Label>
           <Input
             id="email"
             name="email"
@@ -93,31 +97,31 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            placeholder="votre.email@exemple.com"
+            placeholder={t.emailPlaceholder}
           />
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="company">Nom de l'entreprise</Label>
+          <Label htmlFor="company">{t.company}</Label>
           <Input
             id="company"
             name="company"
             value={formData.company}
             onChange={handleChange}
             required
-            placeholder="Nom de votre entreprise"
+            placeholder={t.companyPlaceholder}
           />
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="project">Votre projet</Label>
+          <Label htmlFor="project">{t.project}</Label>
           <Textarea
             id="project"
             name="project"
             value={formData.project}
             onChange={handleChange}
             required
-            placeholder="Décrivez-nous votre projet..."
+            placeholder={t.projectPlaceholder}
             className="min-h-[120px]"
           />
         </div>
@@ -128,7 +132,7 @@ const ContactForm = () => {
           disabled={isSubmitting}
           className="w-full bg-secondary text-white hover:bg-secondary/90 font-semibold"
         >
-          {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
+          {isSubmitting ? t.submittingBtn : t.submitBtn}
         </Button>
       </form>
     </Card>

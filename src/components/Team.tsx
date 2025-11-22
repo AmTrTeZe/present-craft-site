@@ -1,51 +1,19 @@
 import { Card } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations/translations";
 
 const Team = () => {
+  const { language } = useLanguage();
+  const t = translations[language].team;
+
   const expertise = [
-    {
-      title: "Expertise Juridique",
-      description: "Avocats diplômés des meilleures universités, maîtrisant le droit OHADA et les standards internationaux.",
-    },
-    {
-      title: "Finance de Projets",
-      description: "Experts ayant travaillé dans de grandes institutions financières internationales (BNP Paribas, Société Générale, BOAD).",
-    },
-    {
-      title: "Finances Publiques",
-      description: "Magistrats de la Cour des Comptes avec une compréhension unique des processus budgétaires de l'État.",
-    },
-    {
-      title: "Fiscalité",
-      description: "Experts en fiscalité ivoirienne, OHADA, Code des investissements, conventions fiscales et optimisation fiscale internationale pour investisseurs étrangers.",
-    },
-    {
-      title: "Droit Social",
-      description: "Spécialistes du droit du travail ivoirien, gestion RH locale et des procédures d'emploi d'expatriés.",
-    },
-    {
-      title: "Ingénierie",
-      description: "Ingénieurs formés à l'École Polytechnique et à l'École Nationale des Ponts et Chaussées.",
-    },
-  ];
-
-  const sectors = [
-    { title: "Infrastructure & Transport", description: "Routes, autoroutes, ponts, rail, mobilité urbaine, ports, aéroports" },
-    { title: "Énergie", description: "Production électrique, transport & distribution, électrification rurale" },
-    { title: "Services Publics", description: "Eau & assainissement, gestion des déchets, services urbains" },
-    { title: "Industries Extractives", description: "Pétrole, gaz, mines" },
-    { title: "Télécommunications", description: "Infrastructures numériques, réseaux mobiles & fixes, data centers, fibre optique, licences d'opérateur, régulation sectorielle" },
-    { title: "Startups & Innovation", description: "Accompagnement juridique et fiscal, levées de fonds, structuration corporate, due diligence investisseurs, propriété intellectuelle, exit strategy" },
-  ];
-
-  const institutions = [
-    { name: "CEDEAO", logo: "/images/cedeao-logo.png" },
-    { name: "UEMOA", logo: "/images/uemoa-logo.png" },
-    { name: "COMESA", logo: "/images/comesa-logo.png" },
-    { name: "BAD", logo: "/images/bad-logo.png" },
-    { name: "Banque Mondiale", logo: "/images/world-bank-logo.png" },
-    { name: "Nations Unies", logo: "/images/un-logo.png" },
-    { name: "Commission Européenne", logo: "/images/eu-logo.png" },
+    { title: t.expertise1Title, description: t.expertise1Desc },
+    { title: t.expertise2Title, description: t.expertise2Desc },
+    { title: t.expertise3Title, description: t.expertise3Desc },
+    { title: t.expertise4Title, description: t.expertise4Desc },
+    { title: t.expertise5Title, description: t.expertise5Desc },
+    { title: t.expertise6Title, description: t.expertise6Desc },
   ];
 
   return (
@@ -53,17 +21,17 @@ const Team = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Notre Équipe
+            {t.title}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Une équipe pluridisciplinaire de 12 consultants seniors combinant formations d'excellence, expérience internationale et connaissance approfondie des réalités africaines
+            {t.subtitle}
           </p>
           <div className="max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold text-primary mb-4">
-              Une expertise reconnue internationalement
+              {t.recognitionTitle}
             </h3>
             <p className="text-lg text-muted-foreground">
-              Nos consultants sont régulièrement sollicités comme experts par les organisations internationales majeures et contribuent à l'élaboration de standards et lignes directrices en matière de PPP et d'investissements en Afrique.
+              {t.recognitionDesc}
             </p>
           </div>
         </div>
@@ -87,23 +55,16 @@ export default Team;
 export { TeamExpertise };
 
 const TeamExpertise = () => {
-  const sectors = [
-    { title: "Infrastructure & Transport", description: "Routes, autoroutes, ponts, rail, mobilité urbaine, ports, aéroports" },
-    { title: "Énergie", description: "Production électrique, transport & distribution, électrification rurale" },
-    { title: "Services Publics", description: "Eau & assainissement, gestion des déchets, services urbains" },
-    { title: "Industries Extractives", description: "Pétrole, gaz, mines" },
-    { title: "Télécommunications", description: "Infrastructures numériques, réseaux mobiles & fixes, data centers, fibre optique, licences d'opérateur, régulation sectorielle" },
-    { title: "Startups & Innovation", description: "Accompagnement juridique et fiscal, levées de fonds, structuration corporate, due diligence investisseurs, propriété intellectuelle, exit strategy" },
-  ];
+  const { language } = useLanguage();
+  const t = translations[language].team;
 
-  const institutions = [
-    { name: "CEDEAO", logo: "/images/cedeao-logo.png" },
-    { name: "UEMOA", logo: "/images/uemoa-logo.png" },
-    { name: "COMESA", logo: "/images/comesa-logo.png" },
-    { name: "BAD", logo: "/images/bad-logo.png" },
-    { name: "Banque Mondiale", logo: "/images/world-bank-logo.png" },
-    { name: "Nations Unies", logo: "/images/un-logo.png" },
-    { name: "Commission Européenne", logo: "/images/eu-logo.png" },
+  const sectors = [
+    { title: t.sector1Title, description: t.sector1Desc },
+    { title: t.sector2Title, description: t.sector2Desc },
+    { title: t.sector3Title, description: t.sector3Desc },
+    { title: t.sector4Title, description: t.sector4Desc },
+    { title: t.sector5Title, description: t.sector5Desc },
+    { title: t.sector6Title, description: t.sector6Desc },
   ];
 
   return (
@@ -112,62 +73,62 @@ const TeamExpertise = () => {
         <div className="space-y-16">
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-              Une expertise éprouvée
+              {t.provenTitle}
             </h3>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              Nos consultants seniors ont collectivement accompagné des projets d'infrastructure et de développement représentant plus de 5 milliards d'euros en Afrique et en Europe.
+              {t.provenDesc}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
             <Card className="p-8 bg-background border-none shadow-sm">
               <h3 className="text-2xl font-bold text-primary mb-6">
-                Structuration et négociation de grands projets
+                {t.projectsTitle}
               </h3>
               <p className="text-muted-foreground mb-4">
-                Nos équipes maîtrisent l'intégralité du cycle de vie des projets complexes :
+                {t.projectsDesc}
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Montages financiers et juridiques de PPP pluriannuels</span>
+                  <span className="text-foreground">{t.project1}</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Structuration de financements de 100M€ à 1Md€+</span>
+                  <span className="text-foreground">{t.project2}</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Négociation de contrats d'État avec des opérateurs internationaux</span>
+                  <span className="text-foreground">{t.project3}</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Coordination de consortiums multi-partenaires</span>
+                  <span className="text-foreground">{t.project4}</span>
                 </div>
               </div>
             </Card>
 
             <Card className="p-8 bg-background border-none shadow-sm">
               <h3 className="text-2xl font-bold text-primary mb-6">
-                Conseil aux institutions financières
+                {t.financialTitle}
               </h3>
-              <p className="text-muted-foreground mb-4">Expertise démontrée en :</p>
+              <p className="text-muted-foreground mb-4">{t.financialDesc}</p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Financements structurés pour des projets pétroliers, miniers et énergétiques majeurs</span>
+                  <span className="text-foreground">{t.financial1}</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Due diligence et évaluation de risques pays</span>
+                  <span className="text-foreground">{t.financial2}</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Structuration de project finance avec banques commerciales et DFI</span>
+                  <span className="text-foreground">{t.financial3}</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Conseil aux bailleurs multilatéraux (Banque Mondiale, BAD)</span>
+                  <span className="text-foreground">{t.financial4}</span>
                 </div>
               </div>
             </Card>
@@ -176,50 +137,50 @@ const TeamExpertise = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <Card className="p-8 bg-background border-none shadow-sm">
               <h3 className="text-2xl font-bold text-primary mb-6">
-                Accompagnement d'entreprises internationales
+                {t.companiesTitle}
               </h3>
-              <p className="text-muted-foreground mb-4">Nos consultants ont représenté :</p>
+              <p className="text-muted-foreground mb-4">{t.companiesDesc}</p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Des groupes industriels européens dans leur implantation africaine</span>
+                  <span className="text-foreground">{t.company1}</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Des opérateurs de mobilité urbaine sur des projets de transport régionaux</span>
+                  <span className="text-foreground">{t.company2}</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Des énergéticiens dans des projets d'électrification transnationaux</span>
+                  <span className="text-foreground">{t.company3}</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Des investisseurs dans des négociations avec les États d'Afrique de l'Ouest</span>
+                  <span className="text-foreground">{t.company4}</span>
                 </div>
               </div>
             </Card>
 
             <Card className="p-8 bg-background border-none shadow-sm">
               <h3 className="text-2xl font-bold text-primary mb-6">
-                Expertise institutionnelle reconnue
+                {t.institutionalTitle}
               </h3>
-              <p className="text-muted-foreground mb-4">Nos experts interviennent auprès de :</p>
+              <p className="text-muted-foreground mb-4">{t.institutionalDesc}</p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Nations Unies (membre de groupes de travail PPP)</span>
+                  <span className="text-foreground">{t.institutional1}</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Banque Mondiale et BAD (missions d'évaluation InfraSAP)</span>
+                  <span className="text-foreground">{t.institutional2}</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Commission Européenne (expertise développement)</span>
+                  <span className="text-foreground">{t.institutional3}</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">Institutions régionales (CEDEAO, UEMOA, COMESA)</span>
+                  <span className="text-foreground">{t.institutional4}</span>
                 </div>
               </div>
             </Card>
@@ -227,7 +188,7 @@ const TeamExpertise = () => {
 
           <div>
             <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">
-              Secteurs d'intervention
+              {t.sectorsTitle}
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {sectors.map((sector, index) => (
@@ -243,19 +204,19 @@ const TeamExpertise = () => {
 
           <Card className="p-8 bg-background border-none shadow-sm">
             <h3 className="text-2xl font-bold text-primary mb-6">
-              Standards et méthodologie
+              {t.standardsTitle}
             </h3>
             <p className="text-muted-foreground mb-6">
-              Nos équipes appliquent les standards internationaux de :
+              {t.standardsDesc}
             </p>
             <div className="flex items-center gap-2 md:gap-4 mb-8 text-foreground text-sm md:text-base flex-wrap justify-center">
-              <span className="whitespace-nowrap">Banque Mondiale & SFI (IFC)</span>
+              <span className="whitespace-nowrap">{t.standard1}</span>
               <div className="h-6 w-px bg-border shrink-0"></div>
-              <span className="whitespace-nowrap">Banque Africaine de Développement</span>
+              <span className="whitespace-nowrap">{t.standard2}</span>
               <div className="h-6 w-px bg-border shrink-0"></div>
-              <span className="whitespace-nowrap">Commission Économique des Nations Unies pour l'Europe</span>
+              <span className="whitespace-nowrap">{t.standard3}</span>
               <div className="h-6 w-px bg-border shrink-0"></div>
-              <span className="whitespace-nowrap">Union Européenne</span>
+              <span className="whitespace-nowrap">{t.standard4}</span>
             </div>
 
           </Card>

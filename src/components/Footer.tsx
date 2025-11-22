@@ -1,4 +1,10 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations/translations";
+
 const Footer = () => {
+  const { language } = useLanguage();
+  const t = translations[language].footer;
+
   return (
     <footer className="bg-secondary text-white py-8">
       <div className="container mx-auto px-4">
@@ -7,10 +13,10 @@ const Footer = () => {
             Lex Africa Consulting
           </div>
           <p className="text-white/90 text-sm font-extralight mb-4">
-            Consulting & Business Engineering
+            {t.tagline}
           </p>
           <p className="text-white/80 text-xs font-extralight">
-            © {new Date().getFullYear()} Lex Africa Consulting. Tous droits réservés.
+            © {new Date().getFullYear()} Lex Africa Consulting. {t.copyright}
           </p>
         </div>
       </div>

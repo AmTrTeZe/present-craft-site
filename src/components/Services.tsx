@@ -1,31 +1,36 @@
 import { Card } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations/translations";
 
 const Services = () => {
+  const { language } = useLanguage();
+  const t = translations[language].services;
+
   const services = [
     {
-      title: "Représentation Institutionnelle",
-      description: "Nous sommes votre interface avec les ministères, les agences gouvernementales et les autorités sectorielles. Nous présentons vos projets, défendons vos intérêts et facilitons vos relations avec l'administration ivoirienne.",
+      title: t.service1Title,
+      description: t.service1Desc,
     },
     {
-      title: "Conduite des Négociations",
-      description: "Nous menons pour votre compte les négociations avec les partenaires publics et privés, en parfaite connaissance des codes culturels locaux et des dynamiques décisionnelles.",
+      title: t.service2Title,
+      description: t.service2Desc,
     },
     {
-      title: "Gestion des Procédures Administratives",
-      description: "Nous prenons en charge l'ensemble du processus administratif, suivons les dossiers avec attention et maintenons la pression nécessaire pour garantir le respect des délais.",
+      title: t.service3Title,
+      description: t.service3Desc,
     },
     {
-      title: "Développement Stratégique",
-      description: "Accompagnement complet dans votre stratégie d'implantation et de développement en Côte d'Ivoire.",
+      title: t.service4Title,
+      description: t.service4Desc,
     },
   ];
 
   const advantages = [
-    "Éviter les erreurs coûteuses liées à la méconnaissance du contexte local",
-    "Réduire les délais grâce à notre maîtrise des processus institutionnels et notre connaissance des circuits",
-    "Sécuriser votre conformité réglementaire",
-    "Établir une présence locale crédible sans investissement en infrastructure",
-    "Concentrer vos ressources sur votre cœur de métier",
+    t.advantage1,
+    t.advantage2,
+    t.advantage3,
+    t.advantage4,
+    t.advantage5,
   ];
 
   return (
@@ -33,16 +38,16 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Vous Développer en Côte d'Ivoire
+            {t.title}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Lex Africa Consulting accompagne les entreprises étrangères dans leur implantation et leur développement en Côte d'Ivoire
+            {t.subtitle}
           </p>
         </div>
 
         <div className="mb-12 max-w-4xl mx-auto">
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Notre expertise est reconnue par les plus grandes institutions internationales. Nos consultants interviennent régulièrement comme experts auprès de la Banque Mondiale, de la Banque Africaine de Développement et des agences des Nations Unies. Cette reconnaissance institutionnelle garantit que nos méthodes et nos standards répondent aux exigences les plus élevées du secteur.
+            {t.intro}
           </p>
         </div>
 
@@ -61,9 +66,9 @@ const Services = () => {
         </div>
 
         <Card className="p-8 md:p-12 bg-secondary text-white border-none">
-          <h3 className="text-3xl font-bold mb-6">Les Avantages de Notre Mandat</h3>
+          <h3 className="text-3xl font-bold mb-6">{t.mandateTitle}</h3>
           <p className="text-white font-light mb-6">
-            Notre mandat est flexible et s'adapte au stade de votre projet : représentation officielle exclusive, accompagnement ponctuel sur des dossiers spécifiques, ou partenariat continu pour vos opérations en Côte d'Ivoire.
+            {t.mandateIntro}
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             {advantages.map((advantage, index) => (

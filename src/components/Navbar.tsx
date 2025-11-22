@@ -3,11 +3,15 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 import logoBlanc from "@/assets/logo-blanc.png";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations/translations";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const { language, toggleLanguage } = useLanguage();
+  const t = translations[language].nav;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -70,25 +74,31 @@ const Navbar = () => {
               onClick={() => scrollToSection("about")} 
               className={`${activeSection === "about" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}
             >
-              Le Cabinet
+              {t.firm}
             </button>
             <button 
               onClick={() => scrollToSection("services")} 
               className={`${activeSection === "services" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}
             >
-              Services
+              {t.services}
             </button>
             <button 
               onClick={() => scrollToSection("team")} 
               className={`${activeSection === "team" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}
             >
-              Équipe
+              {t.team}
             </button>
             <button 
               onClick={() => scrollToSection("contact")} 
               className={`${activeSection === "contact" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors`}
             >
-              Contact
+              {t.contact}
+            </button>
+            <button
+              onClick={toggleLanguage}
+              className={`font-bold ${isScrolled ? "text-secondary" : "text-white"} hover:text-secondary transition-colors`}
+            >
+              {language === 'fr' ? 'EN' : 'FR'}
             </button>
           </div>
 
@@ -109,25 +119,31 @@ const Navbar = () => {
                 onClick={() => scrollToSection("about")} 
                 className={`${activeSection === "about" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}
               >
-                Le Cabinet
+                {t.firm}
               </button>
               <button 
                 onClick={() => scrollToSection("services")} 
                 className={`${activeSection === "services" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}
               >
-                Services
+                {t.services}
               </button>
               <button 
                 onClick={() => scrollToSection("team")} 
                 className={`${activeSection === "team" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}
               >
-                Équipe
+                {t.team}
               </button>
               <button 
                 onClick={() => scrollToSection("contact")} 
                 className={`${activeSection === "contact" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}
               >
-                Contact
+                {t.contact}
+              </button>
+              <button
+                onClick={toggleLanguage}
+                className={`font-bold ${isScrolled ? "text-secondary" : "text-white"} hover:text-secondary transition-colors text-left`}
+              >
+                {language === 'fr' ? 'EN' : 'FR'}
               </button>
             </div>
           </div>

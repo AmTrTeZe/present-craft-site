@@ -1,38 +1,42 @@
 import { Card } from "@/components/ui/card";
-import { CheckCircle2 } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations/translations";
 
 const About = () => {
+  const { language } = useLanguage();
+  const t = translations[language].about;
+
   const distinctions = [
     {
-      title: "Expertise Technique de Niveau International",
-      description: "Nos équipes maîtrisent l'intégralité des dimensions juridiques, réglementaires, financières et opérationnelles de l'implantation en Côte d'Ivoire. En tant que votre mandataire, nous conduisons en votre nom les négociations, formalités et interactions avec les autorités ivoiriennes."
+      title: t.distinction1Title,
+      description: t.distinction1Desc
     },
     {
-      title: "Maîtrise des Processus Décisionnels",
-      description: "Notre connaissance intime des circuits de validation institutionnels et des protocoles administratifs nous permet d'anticiper les obstacles, d'optimiser les délais et de sécuriser vos procédures dès la première soumission."
+      title: t.distinction2Title,
+      description: t.distinction2Desc
     },
     {
-      title: "Accès aux Cercles Décisionnaires",
-      description: "Nos relations établies avec les cabinets ministériels, les conseillers techniques et la haute direction des agences publiques nous permettent de positionner favorablement vos projets et de comprendre les priorités gouvernementales en temps réel."
+      title: t.distinction3Title,
+      description: t.distinction3Desc
     }
   ];
 
   const values = [
     {
-      title: "Intégrité et conformité",
-      description: "Nous opérons dans le strict respect des réglementations locales et des standards éthiques internationaux. Notre réputation repose sur la transparence de nos pratiques."
+      title: t.value1Title,
+      description: t.value1Desc
     },
     {
-      title: "Efficacité opérationnelle",
-      description: "Structure légère, circuits de décision courts, réactivité maximale. Nous privilégions l'action et les résultats mesurables sur les processus bureaucratiques."
+      title: t.value2Title,
+      description: t.value2Desc
     },
     {
-      title: "Confidentialité absolue",
-      description: "Discrétion totale sur vos projets, vos stratégies et vos négociations. Nous protégeons vos intérêts comme les nôtres."
+      title: t.value3Title,
+      description: t.value3Desc
     },
     {
-      title: "Partenariat de long terme",
-      description: "Au-delà des missions ponctuelles, nous construisons des relations durables fondées sur la confiance mutuelle et la compréhension de vos enjeux stratégiques."
+      title: t.value4Title,
+      description: t.value4Desc
     }
   ];
 
@@ -42,24 +46,24 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              Le Cabinet
+              {t.title}
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Lex Africa Consulting est un cabinet de conseil et d'ingénierie d'affaires indépendant basé à Abidjan. Nous sommes spécialisés dans l'implantation et le développement de sociétés étrangères en Côte d'Ivoire que nous représentons en tant que mandataire.
+              {t.paragraph1}
             </p>
             <p className="text-lg text-muted-foreground mb-6">
-              Nos experts seniors pluridisciplinaires, diplômés des meilleures écoles françaises et ivoiriennes, œuvrent en complémentarité totale. Forts d'une expérience locale et internationale, ils maîtrisent le contexte africain, les réglementations et les circuits décisionnels locaux.
+              {t.paragraph2}
             </p>
             <p className="text-lg text-muted-foreground mb-6">
-              Nous nous positionnons comme le chaînon manquant entre les entreprises internationales et le marché ivoirien : ni un cabinet d'avocats classique, ni un simple consultant, mais votre représentant local habilité à agir pour votre compte dans toutes vos démarches stratégiques et opérationnelles.
+              {t.paragraph3}
             </p>
             <p className="text-lg text-muted-foreground mb-6">
-              Nous accompagnons des promoteurs de projets, des investisseurs institutionnels, des opérateurs internationaux, des entrepreneurs, des entités gouvernementales et des PME dans leurs projets de développement en Côte d'Ivoire et en Afrique de l'Ouest.
+              {t.paragraph4}
             </p>
           </div>
 
           <Card className="p-8 bg-muted border-none">
-            <h3 className="text-2xl font-bold text-primary mb-6">Ce Qui Nous Distingue</h3>
+            <h3 className="text-2xl font-bold text-primary mb-6">{t.distinctionsTitle}</h3>
             <div className="space-y-6">
               {distinctions.map((distinction, index) => (
                 <div key={index}>
@@ -73,7 +77,7 @@ const About = () => {
 
         <div className="mt-12">
           <Card className="p-8 bg-muted border-none">
-            <h3 className="text-2xl font-bold text-primary mb-6">Nos Valeurs</h3>
+            <h3 className="text-2xl font-bold text-primary mb-6">{t.valuesTitle}</h3>
             <div className="grid md:grid-cols-2 gap-6">
               {values.map((value, index) => (
                 <div key={index}>
