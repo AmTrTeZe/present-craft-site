@@ -1,8 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations/translations";
-import abidjanBusiness from "@/assets/abidjan-business-1.jpg";
-import africanTeam from "@/assets/african-team-1.jpg";
 
 const About = () => {
   const { language } = useLanguage();
@@ -45,9 +43,7 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-background scroll-mt-20">
       <div className="container mx-auto px-4">
-        {/* Title + Distinctions Grid */}
-        <div className="grid lg:grid-cols-2 gap-16 items-start mb-16">
-          {/* Left: Title and Text */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
               {t.title}
@@ -61,15 +57,14 @@ const About = () => {
             <p className="text-lg text-muted-foreground mb-6">
               {t.paragraph3}
             </p>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground mb-6">
               {t.paragraph4}
             </p>
           </div>
 
-          {/* Right: Distinctions Card */}
-          <Card className="p-8 md:p-12 bg-muted border-none">
-            <h3 className="text-2xl font-bold text-primary mb-8">{t.distinctionsTitle}</h3>
-            <div className="grid gap-8">
+          <Card className="p-8 bg-muted border-none">
+            <h3 className="text-2xl font-bold text-primary mb-6">{t.distinctionsTitle}</h3>
+            <div className="space-y-6">
               {distinctions.map((distinction, index) => (
                 <div key={index}>
                   <h4 className="text-lg font-bold text-foreground mb-2">{distinction.title}</h4>
@@ -80,21 +75,10 @@ const About = () => {
           </Card>
         </div>
 
-        {/* Image + Values Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Left: Image with rounded corner */}
-          <div className="relative h-[350px] overflow-hidden shadow-xl rounded-tl-[80px]">
-            <img
-              src={abidjanBusiness}
-              alt="Abidjan Business District"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Right: Values Card */}
+        <div className="mt-12">
           <Card className="p-8 bg-muted border-none">
             <h3 className="text-2xl font-bold text-primary mb-6">{t.valuesTitle}</h3>
-            <div className="grid gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               {values.map((value, index) => (
                 <div key={index}>
                   <h4 className="text-lg font-bold text-foreground mb-2">{value.title}</h4>
@@ -104,7 +88,6 @@ const About = () => {
             </div>
           </Card>
         </div>
-
       </div>
     </section>
   );

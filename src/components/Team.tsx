@@ -19,26 +19,26 @@ const Team = () => {
   return (
     <section id="team" className="py-20 bg-background scroll-mt-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 text-center">
-          {t.title}
-        </h2>
-        <p className="text-xl text-muted-foreground mb-12 text-center max-w-3xl mx-auto">
-          {t.subtitle}
-        </p>
-        
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold text-primary mb-4">
-            {t.recognitionTitle}
-          </h3>
-          <p className="text-lg text-muted-foreground">
-            {t.recognitionDesc}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            {t.title}
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            {t.subtitle}
           </p>
+          <div className="max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-primary mb-4">
+              {t.recognitionTitle}
+            </h3>
+            <p className="text-lg text-muted-foreground">
+              {t.recognitionDesc}
+            </p>
+          </div>
         </div>
 
-        {/* Expertise Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {expertise.map((item, index) => (
-            <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-card border-none">
+            <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow bg-card border-none">
               <h3 className="text-lg font-bold text-card-foreground mb-2">
                 {item.title}
               </h3>
@@ -71,11 +71,11 @@ const TeamExpertise = () => {
     <section className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="space-y-16">
-          <div>
+          <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
               {t.provenTitle}
             </h3>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
               {t.provenDesc}
             </p>
           </div>

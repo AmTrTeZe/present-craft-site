@@ -1,8 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations/translations";
-import abidjanOffice from "@/assets/abidjan-business-2.jpg";
-import teamWork from "@/assets/african-team-2.jpg";
 
 const Services = () => {
   const { language } = useLanguage();
@@ -57,7 +55,7 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-card border-none"
+              className="p-6 hover:shadow-lg transition-shadow bg-card border-none"
             >
               <h3 className="text-xl font-bold text-card-foreground mb-3">
                 {service.title}
@@ -67,30 +65,20 @@ const Services = () => {
           ))}
         </div>
 
-        {/* Image integrated with advantages - top-right rounded */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          <div className="relative h-[450px] overflow-hidden shadow-xl rounded-tr-[80px]">
-            <img
-              src={abidjanOffice}
-              alt="Abidjan Office"
-              className="w-full h-full object-cover"
-            />
+        <Card className="p-8 md:p-12 bg-secondary text-white border-none">
+          <h3 className="text-3xl font-bold mb-6">{t.mandateTitle}</h3>
+          <p className="text-white font-light mb-6">
+            {t.mandateIntro}
+          </p>
+          <div className="grid md:grid-cols-2 gap-4">
+            {advantages.map((advantage, index) => (
+              <div key={index} className="flex items-start gap-3">
+                <div className="w-2 h-2 rounded-full bg-white shrink-0 mt-2" />
+                <span className="text-white font-light">{advantage}</span>
+              </div>
+            ))}
           </div>
-          <Card className="p-8 md:p-12 bg-secondary text-white border-none">
-            <h3 className="text-3xl font-bold mb-6">{t.mandateTitle}</h3>
-            <p className="text-white font-light mb-6">
-              {t.mandateIntro}
-            </p>
-            <div className="grid gap-4">
-              {advantages.map((advantage, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-white shrink-0 mt-2" />
-                  <span className="text-white font-light">{advantage}</span>
-                </div>
-              ))}
-            </div>
-          </Card>
-        </div>
+        </Card>
       </div>
     </section>
   );
