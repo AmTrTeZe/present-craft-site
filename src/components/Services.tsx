@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations/translations";
+import businessWork from "@/assets/business-work.jpg";
 
 const Services = () => {
   const { language } = useLanguage();
@@ -55,7 +56,7 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="p-6 hover:shadow-lg transition-shadow bg-card border-none"
+              className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-card border-none"
             >
               <h3 className="text-xl font-bold text-card-foreground mb-3">
                 {service.title}
@@ -65,20 +66,34 @@ const Services = () => {
           ))}
         </div>
 
-        <Card className="p-8 md:p-12 bg-secondary text-white border-none">
-          <h3 className="text-3xl font-bold mb-6">{t.mandateTitle}</h3>
-          <p className="text-white font-light mb-6">
-            {t.mandateIntro}
-          </p>
-          <div className="grid md:grid-cols-2 gap-4">
-            {advantages.map((advantage, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-white shrink-0 mt-2" />
-                <span className="text-white font-light">{advantage}</span>
-              </div>
-            ))}
+        {/* Image + Advantages Section */}
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          {/* Image */}
+          <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
+            <img
+              src={businessWork}
+              alt="Professional at work"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30" />
           </div>
-        </Card>
+
+          {/* Advantages Card */}
+          <Card className="p-8 md:p-12 bg-secondary text-white border-none order-1 lg:order-2">
+            <h3 className="text-3xl font-bold mb-6">{t.mandateTitle}</h3>
+            <p className="text-white font-light mb-6">
+              {t.mandateIntro}
+            </p>
+            <div className="grid gap-4">
+              {advantages.map((advantage, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-white shrink-0 mt-2" />
+                  <span className="text-white font-light">{advantage}</span>
+                </div>
+              ))}
+            </div>
+          </Card>
+        </div>
       </div>
     </section>
   );
