@@ -1,7 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations/translations";
-import businessWork from "@/assets/business-work.jpg";
+import abidjanOffice from "@/assets/abidjan-business-2.jpg";
+import teamWork from "@/assets/african-team-2.jpg";
 
 const Services = () => {
   const { language } = useLanguage();
@@ -66,20 +67,16 @@ const Services = () => {
           ))}
         </div>
 
-        {/* Image + Advantages Section */}
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
-          {/* Image */}
-          <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
+        {/* Image integrated with advantages - top-right rounded */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="relative h-[450px] overflow-hidden shadow-xl rounded-tr-[80px]">
             <img
-              src={businessWork}
-              alt="Professional at work"
+              src={abidjanOffice}
+              alt="Abidjan Office"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30" />
           </div>
-
-          {/* Advantages Card */}
-          <Card className="p-8 md:p-12 bg-secondary text-white border-none order-1 lg:order-2">
+          <Card className="p-8 md:p-12 bg-secondary text-white border-none">
             <h3 className="text-3xl font-bold mb-6">{t.mandateTitle}</h3>
             <p className="text-white font-light mb-6">
               {t.mandateIntro}
