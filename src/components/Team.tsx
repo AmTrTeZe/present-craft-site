@@ -2,6 +2,8 @@ import { Card } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations/translations";
+import teamMeeting from "@/assets/team-meeting.jpg";
+import teamProfessional from "@/assets/team-professional.jpg";
 
 const Team = () => {
   const { language } = useLanguage();
@@ -19,26 +21,39 @@ const Team = () => {
   return (
     <section id="team" className="py-20 bg-background scroll-mt-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            {t.title}
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            {t.subtitle}
-          </p>
-          <div className="max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold text-primary mb-4">
-              {t.recognitionTitle}
-            </h3>
-            <p className="text-lg text-muted-foreground">
-              {t.recognitionDesc}
+        {/* Header with Image */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="order-2 lg:order-1">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+              {t.title}
+            </h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              {t.subtitle}
             </p>
+            <div>
+              <h3 className="text-2xl font-bold text-primary mb-4">
+                {t.recognitionTitle}
+              </h3>
+              <p className="text-lg text-muted-foreground">
+                {t.recognitionDesc}
+              </p>
+            </div>
+          </div>
+
+          <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2">
+            <img
+              src={teamMeeting}
+              alt="Our professional team"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent" />
           </div>
         </div>
 
+        {/* Expertise Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {expertise.map((item, index) => (
-            <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow bg-card border-none">
+            <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-card border-none">
               <h3 className="text-lg font-bold text-card-foreground mb-2">
                 {item.title}
               </h3>
@@ -71,13 +86,25 @@ const TeamExpertise = () => {
     <section className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="space-y-16">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-              {t.provenTitle}
-            </h3>
-            <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              {t.provenDesc}
-            </p>
+          {/* Header with Team Image */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src={teamProfessional}
+                alt="Lex Africa Consulting Team"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
+            </div>
+
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                {t.provenTitle}
+              </h3>
+              <p className="text-lg text-muted-foreground">
+                {t.provenDesc}
+              </p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
