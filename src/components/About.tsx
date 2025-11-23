@@ -1,8 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations/translations";
-import aboutHeaderFr from "@/assets/about-header-fr.jpg";
-import aboutHeaderEn from "@/assets/about-header-en.jpg";
 
 const About = () => {
   const { language } = useLanguage();
@@ -45,17 +43,11 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-background scroll-mt-20">
       <div className="container mx-auto px-4">
-        {/* Header Image with Title */}
-        <div className="mb-8">
-          <img
-            src={language === 'fr' ? aboutHeaderFr : aboutHeaderEn}
-            alt={t.title}
-            className="w-full max-w-3xl rounded-br-3xl"
-          />
-        </div>
-
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+              {t.title}
+            </h2>
             <p className="text-lg text-muted-foreground mb-6">
               {t.paragraph1}
             </p>
