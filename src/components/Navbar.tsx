@@ -119,35 +119,35 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="md:hidden py-4 border-t border-border bg-background/95 backdrop-blur-md">
             <div className="flex flex-col gap-4">
               <button 
                 onClick={() => scrollToSection("about")} 
-                className={`${activeSection === "about" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}
+                className={`${activeSection === "about" ? "text-secondary" : "text-foreground"} hover:text-secondary transition-colors text-left`}
               >
                 {t.firm}
               </button>
               <button 
                 onClick={() => scrollToSection("services")} 
-                className={`${activeSection === "services" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}
+                className={`${activeSection === "services" ? "text-secondary" : "text-foreground"} hover:text-secondary transition-colors text-left`}
               >
                 {t.services}
               </button>
               <button 
                 onClick={() => scrollToSection("team")} 
-                className={`${activeSection === "team" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}
+                className={`${activeSection === "team" ? "text-secondary" : "text-foreground"} hover:text-secondary transition-colors text-left`}
               >
                 {t.team}
               </button>
               <button 
                 onClick={() => scrollToSection("contact")} 
-                className={`${activeSection === "contact" ? "text-secondary" : isScrolled ? "text-foreground" : "text-white"} hover:text-secondary transition-colors text-left`}
+                className={`${activeSection === "contact" ? "text-secondary" : "text-foreground"} hover:text-secondary transition-colors text-left`}
               >
                 {t.contact}
               </button>
               <button
                 onClick={toggleLanguage}
-                className={`text-xs ${isScrolled ? "text-secondary" : "text-white"} hover:text-secondary transition-colors text-left`}
+                className="text-xs text-secondary hover:text-secondary/80 transition-colors text-left font-medium"
               >
                 {language === 'fr' ? 'EN' : 'FR'}
               </button>

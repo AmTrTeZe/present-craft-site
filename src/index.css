@@ -95,7 +95,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-roboto;
-    font-weight: 200;
+    font-weight: 300;
   }
 
   html {
