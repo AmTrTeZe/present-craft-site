@@ -119,8 +119,8 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border bg-background/95 backdrop-blur-md">
-            <div className="flex flex-col gap-4">
+          <div className="md:hidden py-4 flex justify-end">
+            <div className="flex flex-col gap-4 bg-background/95 backdrop-blur-md rounded-xl px-6 py-4 border border-border">
               <button 
                 onClick={() => scrollToSection("about")} 
                 className={`${activeSection === "about" ? "text-secondary" : "text-foreground"} hover:text-secondary transition-colors text-left`}
