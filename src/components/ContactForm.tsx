@@ -25,21 +25,50 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // URL du script PHP sur votre hébergement
+      // Remplacez par l'URL de votre hébergement une fois le script uploadé
+      const apiUrl = "https://lexafricaconsulting.ci/send-email.php";
+      
+      const response = await fetch(apiUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        toast({
+          title: t.successTitle,
+          description: t.successDesc,
+        });
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          company: "",
+          project: "",
+        });
+      } else {
+        toast({
+          title: language === "fr" ? "Erreur" : "Error",
+          description: result.message || (language === "fr" ? "Une erreur est survenue" : "An error occurred"),
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
       toast({
-        title: t.successTitle,
-        description: t.successDesc,
+        title: language === "fr" ? "Erreur" : "Error",
+        description: language === "fr" ? "Impossible d'envoyer le message. Veuillez réessayer." : "Unable to send message. Please try again.",
+        variant: "destructive",
       });
+    } finally {
       setIsSubmitting(false);
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        company: "",
-        project: "",
-      });
-    }, 1000);
+    }
   };
 
   const handleChange = (
