@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
-        'manrope': ['Manrope', 'sans-serif'],
+        'work-sans': ['Work Sans', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
