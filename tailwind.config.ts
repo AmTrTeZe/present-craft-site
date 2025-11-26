@@ -15,7 +15,6 @@ export default {
     extend: {
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
-        'work-sans': ['Work Sans', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
