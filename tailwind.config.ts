@@ -15,7 +15,6 @@ export default {
     extend: {
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
-        'garamond': ['EB Garamond', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
