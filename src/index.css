@@ -94,8 +94,8 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-roboto;
-    font-weight: 300;
+    @apply bg-background text-foreground font-manrope;
+    font-weight: 400;
   }
 
   html {
