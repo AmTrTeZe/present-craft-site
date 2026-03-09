@@ -27,13 +27,13 @@ export const translations = {
       distinction3Desc: "Nous accompagnons la structuration et la conduite des échanges avec les parties prenantes publiques et para-publiques pertinentes, de manière à lever les points de friction, sécuriser les processus et favoriser l'avancement effectif des projets dans un cadre rigoureux et conforme.",
       valuesTitle: "Nos Valeurs",
       value1Title: "Intégrité et conformité",
-      value1Desc: "Nous opérons dans le strict respect des réglementations locales et des standards éthiques internationaux. Notre réputation repose sur la transparence de nos pratiques.",
-      value2Title: "Efficacité opérationnelle",
-      value2Desc: "Structure légère, circuits de décision courts, réactivité maximale. Nous privilégions l'action et les résultats mesurables sur les processus bureaucratiques.",
-      value3Title: "Confidentialité absolue",
-      value3Desc: "Discrétion totale sur vos projets, vos stratégies et vos négociations. Nous protégeons vos intérêts comme les nôtres.",
-      value4Title: "Partenariat de long terme",
-      value4Desc: "Au-delà des missions ponctuelles, nous construisons des relations durables fondées sur la confiance mutuelle et la compréhension de vos enjeux stratégiques."
+      value1Desc: "Nous conduisons nos missions dans le respect des réglementations applicables et des standards internationaux d'intégrité. Notre approche repose sur la transparence, la rigueur et le professionnalisme dans l'ensemble de nos interventions.",
+      value2Title: "Efficacité d'exécution",
+      value2Desc: "Nous privilégions une organisation agile, une forte réactivité et une exécution rigoureuse. Notre objectif est d'apporter à nos clients des solutions concrètes, lisibles et orientées résultats.",
+      value3Title: "Confidentialité et discrétion",
+      value3Desc: "Nous attachons une importance particulière à la confidentialité des informations qui nous sont confiées. Nous veillons à protéger avec le plus haut degré de discrétion les projets, échanges et intérêts de nos clients.",
+      value4Title: "Engagement dans la durée",
+      value4Desc: "Au-delà des missions ponctuelles, nous privilégions des relations de confiance inscrites dans le temps, fondées sur la compréhension des enjeux, la qualité d'exécution et la constance de l'accompagnement."
     },
     services: {
       title: "Vous Développer en Côte d'Ivoire",
@@ -173,13 +173,13 @@ export const translations = {
       distinction3Desc: "We support the structuring and conduct of exchanges with relevant public and para-public stakeholders, in order to resolve friction points, secure processes, and promote effective project progress within a rigorous and compliant framework.",
       valuesTitle: "Our Values",
       value1Title: "Integrity and Compliance",
-      value1Desc: "We operate in strict adherence to local regulations and international ethical standards. Our reputation rests on the transparency of our practices.",
-      value2Title: "Operational Efficiency",
-      value2Desc: "Lean structure, short decision-making chains, maximum responsiveness. We prioritize action and measurable results over bureaucratic processes.",
-      value3Title: "Absolute Confidentiality",
-      value3Desc: "Total discretion regarding your projects, strategies, and negotiations. We protect your interests as our own.",
-      value4Title: "Long-term Partnership",
-      value4Desc: "Beyond one-off assignments, we build lasting relationships founded on mutual trust and understanding of your strategic challenges."
+      value1Desc: "We conduct our missions in compliance with applicable regulations and international integrity standards. Our approach is built on transparency, rigor, and professionalism across all our engagements.",
+      value2Title: "Execution Efficiency",
+      value2Desc: "We favor an agile organization, strong responsiveness, and rigorous execution. Our goal is to provide our clients with concrete, clear, and results-oriented solutions.",
+      value3Title: "Confidentiality and Discretion",
+      value3Desc: "We place particular importance on the confidentiality of information entrusted to us. We ensure the highest degree of discretion in protecting our clients' projects, exchanges, and interests.",
+      value4Title: "Long-term Commitment",
+      value4Desc: "Beyond one-off assignments, we favor trust-based relationships built over time, grounded in understanding challenges, quality of execution, and consistency of support."
     },
     services: {
       title: "Developing Your Business in Côte d'Ivoire",
