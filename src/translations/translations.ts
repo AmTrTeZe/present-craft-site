@@ -153,8 +153,8 @@ export const translations = {
       contact: "Contact"
     },
     hero: {
-      title: "Consulting & Business Engineering",
-      subtitle: "Your strategic partner for establishing and developing your business in Côte d'Ivoire",
+      title: "Strategic Advisory, Project Structuring & Institutional Relations",
+      subtitle: "Advising and supporting international investors in their projects in Côte d'Ivoire",
       contactBtn: "Contact us",
       servicesBtn: "Discover our services"
     },
