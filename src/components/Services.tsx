@@ -66,11 +66,15 @@ const Services = () => {
           ))}
         </div>
 
-        <Card className="p-8 md:p-12 bg-secondary text-white border-none">
+        <Card className="p-8 md:p-12 bg-secondary text-white border-none mb-8">
           <h3 className="text-3xl font-bold mb-6">{t.mandateTitle}</h3>
-          <p className="text-white font-light mb-6">
+          <p className="text-white font-light">
             {t.mandateIntro}
           </p>
+        </Card>
+
+        <Card className="p-8 md:p-12 bg-secondary text-white border-none">
+          <h3 className="text-3xl font-bold mb-6">{t.advantagesTitle}</h3>
           <div className="grid md:grid-cols-2 gap-4">
             {advantages.map((advantage, index) => (
               <div key={index} className="flex items-start gap-3">
