@@ -173,13 +173,13 @@ export const translations = {
       distinction3Desc: "We support the structuring and conduct of exchanges with relevant public and para-public stakeholders, in order to resolve friction points, secure processes, and promote effective project progress within a rigorous and compliant framework.",
       valuesTitle: "Our Values",
       value1Title: "Integrity and Compliance",
-      value1Desc: "We operate in strict adherence to local regulations and international ethical standards. Our reputation rests on the transparency of our practices.",
-      value2Title: "Operational Efficiency",
-      value2Desc: "Lean structure, short decision-making chains, maximum responsiveness. We prioritize action and measurable results over bureaucratic processes.",
-      value3Title: "Absolute Confidentiality",
-      value3Desc: "Total discretion regarding your projects, strategies, and negotiations. We protect your interests as our own.",
-      value4Title: "Long-term Partnership",
-      value4Desc: "Beyond one-off assignments, we build lasting relationships founded on mutual trust and understanding of your strategic challenges."
+      value1Desc: "We conduct our missions in compliance with applicable regulations and international integrity standards. Our approach is built on transparency, rigor, and professionalism across all our engagements.",
+      value2Title: "Execution Efficiency",
+      value2Desc: "We favor an agile organization, strong responsiveness, and rigorous execution. Our goal is to provide our clients with concrete, clear, and results-oriented solutions.",
+      value3Title: "Confidentiality and Discretion",
+      value3Desc: "We place particular importance on the confidentiality of information entrusted to us. We ensure the highest degree of discretion in protecting our clients' projects, exchanges, and interests.",
+      value4Title: "Long-term Commitment",
+      value4Desc: "Beyond one-off assignments, we favor trust-based relationships built over time, grounded in understanding challenges, quality of execution, and consistency of support."
     },
     services: {
       title: "Developing Your Business in Côte d'Ivoire",
