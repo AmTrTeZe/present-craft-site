@@ -167,7 +167,7 @@ export const translations = {
       distinctionsTitle: "What Sets Us Apart",
       distinction1Title: "High-Level Multidisciplinary Expertise",
       distinction1Desc: "Lex Africa Consulting relies on a multidisciplinary team bringing together lawyers, legal experts, financiers, and institutional environment specialists. This integrated approach enables us to support our clients across the strategic, legal, financial, regulatory, and institutional dimensions of their projects in Côte d'Ivoire.",
-      distinction2Title: "Mastery of the Institutional and Administrative Environment",
+      distinction2Title: "Mastery of Regulatory and Administrative Frameworks",
       distinction2Desc: "Our in-depth knowledge of institutional processes, regulatory frameworks, and applicable administrative requirements enables us to anticipate areas of concern, structure approaches rigorously, and promote smooth and compliant project execution.",
       distinction3Title: "Institutional Coordination",
       distinction3Desc: "We support the structuring and conduct of exchanges with relevant public and para-public stakeholders, in order to resolve friction points, secure processes, and promote effective project progress within a rigorous and compliant framework.",
