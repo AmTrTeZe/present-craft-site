@@ -27,13 +27,13 @@ export const translations = {
       distinction3Desc: "Nous accompagnons la structuration et la conduite des échanges avec les parties prenantes publiques et para-publiques pertinentes, de manière à lever les points de friction, sécuriser les processus et favoriser l'avancement effectif des projets dans un cadre rigoureux et conforme.",
       valuesTitle: "Nos Valeurs",
       value1Title: "Intégrité et conformité",
-      value1Desc: "Nous opérons dans le strict respect des réglementations locales et des standards éthiques internationaux. Notre réputation repose sur la transparence de nos pratiques.",
-      value2Title: "Efficacité opérationnelle",
-      value2Desc: "Structure légère, circuits de décision courts, réactivité maximale. Nous privilégions l'action et les résultats mesurables sur les processus bureaucratiques.",
-      value3Title: "Confidentialité absolue",
-      value3Desc: "Discrétion totale sur vos projets, vos stratégies et vos négociations. Nous protégeons vos intérêts comme les nôtres.",
-      value4Title: "Partenariat de long terme",
-      value4Desc: "Au-delà des missions ponctuelles, nous construisons des relations durables fondées sur la confiance mutuelle et la compréhension de vos enjeux stratégiques."
+      value1Desc: "Nous conduisons nos missions dans le respect des réglementations applicables et des standards internationaux d'intégrité. Notre approche repose sur la transparence, la rigueur et le professionnalisme dans l'ensemble de nos interventions.",
+      value2Title: "Efficacité d'exécution",
+      value2Desc: "Nous privilégions une organisation agile, une forte réactivité et une exécution rigoureuse. Notre objectif est d'apporter à nos clients des solutions concrètes, lisibles et orientées résultats.",
+      value3Title: "Confidentialité et discrétion",
+      value3Desc: "Nous attachons une importance particulière à la confidentialité des informations qui nous sont confiées. Nous veillons à protéger avec le plus haut degré de discrétion les projets, échanges et intérêts de nos clients.",
+      value4Title: "Engagement dans la durée",
+      value4Desc: "Au-delà des missions ponctuelles, nous privilégions des relations de confiance inscrites dans le temps, fondées sur la compréhension des enjeux, la qualité d'exécution et la constance de l'accompagnement."
     },
     services: {
       title: "Vous Développer en Côte d'Ivoire",
