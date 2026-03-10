@@ -70,11 +70,9 @@ const Services = () => {
           <p className="text-muted-foreground">{t.mandateIntro}</p>
         </Card>
 
-        <Card className="p-8 md:p-12 bg-secondary text-white border-none mb-8">
-          <h3 className="text-3xl font-bold mb-6">{t.complianceTitle}</h3>
-          <p className="text-white font-light">
-            {t.complianceIntro}
-          </p>
+        <Card className="p-6 hover:shadow-lg transition-shadow bg-card border-none mb-8">
+          <h3 className="text-xl font-bold text-card-foreground mb-3">{t.complianceTitle}</h3>
+          <p className="text-muted-foreground">{t.complianceIntro}</p>
         </Card>
 
         <Card className="p-8 md:p-12 bg-secondary text-white border-none">
