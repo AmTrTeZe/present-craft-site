@@ -131,7 +131,7 @@ export const translations = {
       email: "Email",
       address: "Adresse",
       formTitle: "Soumettre une demande",
-      formSubtitle: "Merci de nous transmettre les informations essentielles relatives à votre projet.\n\nNous vous répondrons de manière confidentielle dans les meilleurs délais.",
+      formSubtitle: "Merci de nous transmettre les informations essentielles relatives à votre projet.\nNous vous répondrons de manière confidentielle dans les meilleurs délais.",
       firstName: "Prénom",
       lastName: "Nom",
       emailLabel: "E-mail professionnel",
