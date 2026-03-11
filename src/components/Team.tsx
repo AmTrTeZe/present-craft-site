@@ -64,7 +64,6 @@ const Team = () => {
             </Card>
           ))}
         </div>
-        </div>
       </div>
     </section>
   );
