@@ -151,7 +151,7 @@ export const translations = {
       confidentialityNotice: "Les informations transmises via ce formulaire sont traitées de manière confidentielle."
     },
     footer: {
-      tagline: "Consulting & Business Engineering",
+      tagline: "Conseil stratégique · Structuration de projets · Relations institutionnelles",
       copyright: "Tous droits réservés."
     }
   },
