@@ -18,6 +18,7 @@ const ContactForm = () => {
     lastName: "",
     email: "",
     company: "",
+    subject: "",
     project: "",
   });
 
@@ -50,6 +51,7 @@ const ContactForm = () => {
           lastName: "",
           email: "",
           company: "",
+          subject: "",
           project: "",
         });
       } else {
@@ -86,7 +88,7 @@ const ContactForm = () => {
         <h3 className="text-2xl font-bold text-primary mb-4">
           {t.formTitle}
         </h3>
-        <p className="text-muted-foreground">
+        <p className="text-muted-foreground whitespace-pre-line">
           {t.formSubtitle}
         </p>
       </div>
@@ -118,7 +120,7 @@ const ContactForm = () => {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="email">{t.email}</Label>
+          <Label htmlFor="email">{t.emailLabel}</Label>
           <Input
             id="email"
             name="email"
@@ -143,6 +145,18 @@ const ContactForm = () => {
         </div>
 
         <div className="space-y-2">
+          <Label htmlFor="subject">{t.subject}</Label>
+          <Input
+            id="subject"
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
+            required
+            placeholder={t.subjectPlaceholder}
+          />
+        </div>
+
+        <div className="space-y-2">
           <Label htmlFor="project">{t.project}</Label>
           <Textarea
             id="project"
@@ -163,6 +177,10 @@ const ContactForm = () => {
         >
           {isSubmitting ? t.submittingBtn : t.submitBtn}
         </Button>
+
+        <p className="text-xs text-muted-foreground text-center mt-4">
+          {t.confidentialityNotice}
+        </p>
       </form>
     </Card>
   );
