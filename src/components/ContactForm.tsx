@@ -51,6 +51,7 @@ const ContactForm = () => {
           lastName: "",
           email: "",
           company: "",
+          subject: "",
           project: "",
         });
       } else {
