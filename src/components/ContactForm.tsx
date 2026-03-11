@@ -145,6 +145,18 @@ const ContactForm = () => {
         </div>
 
         <div className="space-y-2">
+          <Label htmlFor="subject">{t.subject}</Label>
+          <Input
+            id="subject"
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
+            required
+            placeholder={t.subjectPlaceholder}
+          />
+        </div>
+
+        <div className="space-y-2">
           <Label htmlFor="project">{t.project}</Label>
           <Textarea
             id="project"
@@ -165,6 +177,10 @@ const ContactForm = () => {
         >
           {isSubmitting ? t.submittingBtn : t.submitBtn}
         </Button>
+
+        <p className="text-xs text-muted-foreground text-center mt-4">
+          {t.confidentialityNotice}
+        </p>
       </form>
     </Card>
   );
