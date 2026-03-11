@@ -120,7 +120,7 @@ const ContactForm = () => {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="email">{t.email}</Label>
+          <Label htmlFor="email">{t.emailLabel}</Label>
           <Input
             id="email"
             name="email"
