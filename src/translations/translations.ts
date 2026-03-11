@@ -7,7 +7,7 @@ export const translations = {
       contact: "Contact"
     },
     hero: {
-      title: "Conseil stratégique, structuration de projets & relations institutionnelles",
+      title: "Conseil stratégique · Structuration de projets · Relations institutionnelles",
       subtitle: "Conseiller et accompagner les investisseurs internationaux dans leurs projets en Côte d'Ivoire",
       contactBtn: "Nous contacter",
       servicesBtn: "Découvrir nos services"
