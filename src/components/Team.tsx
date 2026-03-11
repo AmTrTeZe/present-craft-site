@@ -107,22 +107,12 @@ const TeamExpertise = () => {
                 {t.projectsDesc}
               </p>
               <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.project1}</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.project2}</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.project3}</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.project4}</span>
-                </div>
+                {[t.project1, t.project2, t.project3, t.project4].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
+                    <span className="text-foreground">{item}</span>
+                  </div>
+                ))}
               </div>
             </Card>
 
@@ -132,22 +122,12 @@ const TeamExpertise = () => {
               </h3>
               <p className="text-muted-foreground mb-4">{t.financialDesc}</p>
               <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.financial1}</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.financial2}</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.financial3}</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.financial4}</span>
-                </div>
+                {[t.financial1, t.financial2, t.financial3, t.financial4].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
+                    <span className="text-foreground">{item}</span>
+                  </div>
+                ))}
               </div>
             </Card>
           </div>
@@ -159,22 +139,12 @@ const TeamExpertise = () => {
               </h3>
               <p className="text-muted-foreground mb-4">{t.companiesDesc}</p>
               <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.company1}</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.company2}</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.company3}</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.company4}</span>
-                </div>
+                {[t.company1, t.company2, t.company3, t.company4].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
+                    <span className="text-foreground">{item}</span>
+                  </div>
+                ))}
               </div>
             </Card>
 
@@ -182,25 +152,7 @@ const TeamExpertise = () => {
               <h3 className="text-2xl font-bold text-primary mb-6">
                 {t.institutionalTitle}
               </h3>
-              <p className="text-muted-foreground mb-4">{t.institutionalDesc}</p>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.institutional1}</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.institutional2}</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.institutional3}</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-secondary shrink-0 mt-1" size={20} />
-                  <span className="text-foreground">{t.institutional4}</span>
-                </div>
-              </div>
+              <p className="text-muted-foreground">{t.institutionalDesc}</p>
             </Card>
           </div>
 
@@ -224,19 +176,9 @@ const TeamExpertise = () => {
             <h3 className="text-2xl font-bold text-primary mb-6">
               {t.standardsTitle}
             </h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-muted-foreground whitespace-pre-line">
               {t.standardsDesc}
             </p>
-            <div className="flex items-center gap-2 md:gap-4 mb-8 text-foreground text-sm md:text-base flex-wrap justify-center">
-              <span className="whitespace-nowrap">{t.standard1}</span>
-              <div className="h-6 w-px bg-border shrink-0"></div>
-              <span className="whitespace-nowrap">{t.standard2}</span>
-              <div className="h-6 w-px bg-border shrink-0"></div>
-              <span className="whitespace-nowrap">{t.standard3}</span>
-              <div className="h-6 w-px bg-border shrink-0"></div>
-              <span className="whitespace-nowrap">{t.standard4}</span>
-            </div>
-
           </Card>
         </div>
       </div>
