@@ -307,7 +307,7 @@ export const translations = {
       confidentialityNotice: "Information submitted through this form is treated confidentially."
     },
     footer: {
-      tagline: "Consulting & Business Engineering",
+      tagline: "Strategic Advisory · Project Structuring · Institutional Relations",
       copyright: "All rights reserved."
     }
   }
