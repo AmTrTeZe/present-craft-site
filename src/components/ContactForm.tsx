@@ -88,7 +88,7 @@ const ContactForm = () => {
         <h3 className="text-2xl font-bold text-primary mb-4">
           {t.formTitle}
         </h3>
-        <p className="text-muted-foreground">
+        <p className="text-muted-foreground whitespace-pre-line">
           {t.formSubtitle}
         </p>
       </div>
