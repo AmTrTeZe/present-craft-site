@@ -131,7 +131,7 @@ export const translations = {
       email: "Email",
       address: "Adresse",
       formTitle: "Soumettre une demande",
-      formSubtitle: "Merci de nous transmettre les informations essentielles relatives à votre projet.\nNous vous répondrons de manière confidentielle dans les meilleurs délais.",
+      formSubtitle: "Merci de nous transmettre les informations essentielles relatives à votre projet.\n\nNous vous répondrons de manière confidentielle dans les meilleurs délais.",
       firstName: "Prénom",
       lastName: "Nom",
       emailLabel: "E-mail professionnel",
@@ -151,7 +151,7 @@ export const translations = {
       confidentialityNotice: "Les informations transmises via ce formulaire sont traitées de manière confidentielle."
     },
     footer: {
-      tagline: "Consulting & Business Engineering",
+      tagline: "Conseil stratégique · Structuration de projets · Relations institutionnelles",
       copyright: "Tous droits réservés."
     }
   },
@@ -307,7 +307,7 @@ export const translations = {
       confidentialityNotice: "Information submitted through this form is treated confidentially."
     },
     footer: {
-      tagline: "Consulting & Business Engineering",
+      tagline: "Strategic Advisory · Project Structuring · Institutional Relations",
       copyright: "All rights reserved."
     }
   }
