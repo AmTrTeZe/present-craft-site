@@ -60,7 +60,7 @@ export const translations = {
     },
     team: {
       title: "Notre Équipe",
-      subtitle: "Une équipe pluridisciplinaire de 12 consultants seniors combinant formations d'excellence, expérience internationale et connaissance approfondie des réalités africaines",
+      subtitle: "Lex Africa Consulting s'appuie sur une équipe pluridisciplinaire de 12 consultants seniors réunissant des compétences complémentaires en droit, finance, fiscalité, affaires publiques, réglementation et ingénierie. Cette diversité de parcours nous permet d'accompagner des projets complexes avec une approche intégrée, adaptée aux réalités des marchés africains et aux exigences des investisseurs internationaux.",
       recognitionTitle: "Une expertise reconnue internationalement",
       recognitionDesc: "Nos consultants sont régulièrement sollicités comme experts par les organisations internationales majeures et contribuent à l'élaboration de standards et lignes directrices en matière de PPP et d'investissements en Afrique.",
       expertise1Title: "Expertise Juridique",
