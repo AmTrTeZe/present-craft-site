@@ -16,8 +16,11 @@ const Contact = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
               {t.title}
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground mb-6">
               {t.subtitle}
+            </p>
+            <p className="text-muted-foreground max-w-3xl mx-auto whitespace-pre-line">
+              {t.introText}
             </p>
           </div>
 
