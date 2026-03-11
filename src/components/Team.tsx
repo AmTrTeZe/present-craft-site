@@ -30,7 +30,7 @@ const Team = () => {
             <h3 className="text-2xl font-bold text-primary mb-4">
               {t.recognitionTitle}
             </h3>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground whitespace-pre-line">
               {t.recognitionDesc}
             </p>
           </div>
