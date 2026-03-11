@@ -226,6 +226,8 @@ export const translations = {
       expertise5Desc: "Specialists in Ivorian labor law, local HR management, and expatriate employment procedures.",
       expertise6Title: "Engineering",
       expertise6Desc: "Engineers trained at École Polytechnique and École Nationale des Ponts et Chaussées.",
+      expertise7Title: "Engineering and Sectoral Support",
+      expertise7Desc: "We mobilize, depending on the projects, technical and sectoral expertise to inform operational, regulatory, and implementation dimensions.",
       provenTitle: "Proven Expertise",
       provenDesc: "Our senior consultants have collectively supported infrastructure and development projects representing over €5 billion in Africa and Europe.",
       projectsTitle: "Structuring and Negotiating Major Projects",
