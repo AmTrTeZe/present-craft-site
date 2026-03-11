@@ -14,6 +14,7 @@ const Team = () => {
     { title: t.expertise4Title, description: t.expertise4Desc },
     { title: t.expertise5Title, description: t.expertise5Desc },
     { title: t.expertise6Title, description: t.expertise6Desc },
+    { title: t.expertise7Title, description: t.expertise7Desc },
   ];
 
   return (
