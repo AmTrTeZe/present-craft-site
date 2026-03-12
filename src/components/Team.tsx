@@ -37,29 +37,39 @@ const Team = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {expertise.slice(0, 4).map((item, index) => (
+        {/* Row 1: Expertise juridique + Finance de projet */}
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {expertise.slice(0, 2).map((item, index) => (
             <Card key={index} className="p-6 text-center bg-card border border-border">
-              <h3 className="text-lg font-bold text-card-foreground mb-2">
-                {item.title}
-              </h3>
+              <h3 className="text-lg font-bold text-card-foreground mb-2">{item.title}</h3>
               <p className="text-sm text-muted-foreground">{item.description}</p>
             </Card>
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mt-6">
-          <Card className="p-6 text-center bg-card border border-border md:col-span-2">
-            <h3 className="text-lg font-bold text-card-foreground mb-2">
-              {expertise[4].title}
-            </h3>
+        {/* Row 2: Finances publiques + Fiscalité */}
+        <div className="grid md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
+          {expertise.slice(2, 4).map((item, index) => (
+            <Card key={index} className="p-6 text-center bg-card border border-border">
+              <h3 className="text-lg font-bold text-card-foreground mb-2">{item.title}</h3>
+              <p className="text-sm text-muted-foreground">{item.description}</p>
+            </Card>
+          ))}
+        </div>
+
+        {/* Row 3: Affaires publiques */}
+        <div className="max-w-4xl mx-auto mt-6">
+          <Card className="p-6 text-center bg-card border border-border">
+            <h3 className="text-lg font-bold text-card-foreground mb-2">{expertise[4].title}</h3>
             <p className="text-sm text-muted-foreground">{expertise[4].description}</p>
           </Card>
+        </div>
+
+        {/* Row 4: Droit social + Ingénierie */}
+        <div className="grid md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
           {expertise.slice(5).map((item, index) => (
             <Card key={index} className="p-6 text-center bg-card border border-border">
-              <h3 className="text-lg font-bold text-card-foreground mb-2">
-                {item.title}
-              </h3>
+              <h3 className="text-lg font-bold text-card-foreground mb-2">{item.title}</h3>
               <p className="text-sm text-muted-foreground">{item.description}</p>
             </Card>
           ))}
