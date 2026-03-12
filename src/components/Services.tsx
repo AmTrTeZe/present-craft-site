@@ -51,7 +51,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {services.map((service, index) => (
             <Card
               key={index}
@@ -63,10 +63,6 @@ const Services = () => {
               <p className="text-muted-foreground">{service.description}</p>
             </Card>
           ))}
-
-          {/* Empty spacers for first two columns */}
-          <div className="hidden lg:block" />
-          <div className="hidden lg:block" />
 
           <Card className="p-6 hover:shadow-lg transition-shadow bg-card border-none">
             <h3 className="text-xl font-bold text-card-foreground mb-3">{t.complianceTitle}</h3>
