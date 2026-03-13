@@ -21,7 +21,7 @@ const Team = () => {
     <section id="team" className="py-20 bg-background scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8">
+          <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-8">
             {t.title}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto whitespace-pre-line">
