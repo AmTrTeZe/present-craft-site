@@ -49,7 +49,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <Card
               key={index}
@@ -62,20 +62,17 @@ const Services = () => {
             </Card>
           ))}
 
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6">
           <Card className="p-6 hover:shadow-lg transition-shadow bg-card border-none">
             <h3 className="text-xl font-bold text-card-foreground mb-3">{t.mandateTitle}</h3>
             <p className="text-muted-foreground">{t.mandateIntro}</p>
           </Card>
 
-          <Card className="p-6 md:p-8 bg-secondary text-white border-none">
-            <h3 className="text-2xl font-bold mb-4">{t.advantagesTitle}</h3>
-            <div className="grid grid-cols-1 gap-3">
+          <Card className="p-6 bg-secondary text-white border-none">
+            <h3 className="text-xl font-bold mb-4">{t.advantagesTitle}</h3>
+            <div className="grid grid-cols-1 gap-2">
               {advantages.map((advantage, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-white shrink-0 mt-2" />
+                <div key={index} className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-white shrink-0 mt-2" />
                   <span className="text-white font-light text-sm">{advantage}</span>
                 </div>
               ))}
