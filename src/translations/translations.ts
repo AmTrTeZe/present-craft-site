@@ -181,15 +181,15 @@ export const translations = {
       distinction2Desc: "Our in-depth knowledge of administrative requirements, regulatory frameworks and applicable processes enables us to anticipate areas of concern, structure approaches methodically and present solid, complete files from their first submission, promoting smooth and compliant project execution.",
       distinction3Title: "Institutional coordination capability",
       distinction3Desc: "We know how to engage productive dialogue with government departments and sector authorities, and above all how to maintain it over time.\n\nIn an environment where project progress often depends on the quality and continuity of institutional exchanges, this capability is a decisive asset and helps to resolve friction points, secure processes and promote effective project progress within a rigorous and compliant framework.",
-      valuesTitle: "Our Values",
-      value1Title: "Integrity and compliance",
-      value1Desc: "We conduct our engagements in compliance with applicable regulations and international integrity standards. Our approach is built on transparency, rigor and professionalism across all our interventions.",
-      value2Title: "Execution efficiency",
-      value2Desc: "We favor an agile organization, strong responsiveness and rigorous execution. Our goal is to provide our clients with concrete, clear and results-oriented solutions.",
+      valuesTitle: "Our Commitments",
+      value1Title: "Compliance and integrity",
+      value1Desc: "Our clients operate in environments subject to the strictest compliance and anti-corruption requirements. This is also our standard. We conduct our engagements in compliance with applicable regulations and international integrity standards, within the framework of documented and fully auditable mandates.",
+      value2Title: "Clarity of execution",
+      value2Desc: "We favor an agile organization, a dedicated point of contact, precise deliverables, strong responsiveness and rigorous execution. Our goal is to provide our clients with concrete, clear, actionable and results-oriented solutions.",
       value3Title: "Confidentiality and discretion",
-      value3Desc: "We place particular importance on the confidentiality of information entrusted to us. We ensure the highest degree of discretion in protecting our clients' projects, exchanges and interests.",
+      value3Desc: "We place particular importance on the confidentiality of information, exchanges and sensitive elements entrusted to us. We conduct our interventions with the discretion required in interactions with public and private stakeholders, in order to preserve our clients' interests at every stage of the project.",
       value4Title: "Long-term commitment",
-      value4Desc: "Beyond one-off assignments, we favor trust-based relationships built over time, grounded in understanding challenges, quality of execution and consistency of support."
+      value4Desc: "We build lasting working relationships grounded in understanding challenges, quality of execution and consistency of support."
     },
     services: {
       title: "Supporting Your Projects in Côte d'Ivoire",
