@@ -162,6 +162,9 @@ const TeamExpertise = () => {
             <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">
               {t.sectorsTitle}
             </h3>
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-8 whitespace-pre-line">
+              {t.sectorsDesc}
+            </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {sectors.map((sector, index) => (
                 <Card key={index} className="p-6 bg-background border-none shadow-sm">
