@@ -63,11 +63,6 @@ const Services = () => {
           ))}
 
           <Card className="p-6 hover:shadow-lg transition-shadow bg-card border-none">
-            <h3 className="text-xl font-bold text-card-foreground mb-3">{t.complianceTitle}</h3>
-            <p className="text-muted-foreground">{t.complianceIntro}</p>
-          </Card>
-
-          <Card className="p-6 hover:shadow-lg transition-shadow bg-card border-none">
             <h3 className="text-xl font-bold text-card-foreground mb-3">{t.mandateTitle}</h3>
             <p className="text-muted-foreground">{t.mandateIntro}</p>
           </Card>
