@@ -62,23 +62,26 @@ const Services = () => {
             </Card>
           ))}
 
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6">
           <Card className="p-6 hover:shadow-lg transition-shadow bg-card border-none">
             <h3 className="text-xl font-bold text-card-foreground mb-3">{t.mandateTitle}</h3>
             <p className="text-muted-foreground">{t.mandateIntro}</p>
           </Card>
-        </div>
 
-        <Card className="p-8 md:p-12 bg-secondary text-white border-none">
-          <h3 className="text-3xl font-bold mb-6">{t.advantagesTitle}</h3>
-          <div className="grid md:grid-cols-1 gap-4">
-            {advantages.map((advantage, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-white shrink-0 mt-2" />
-                <span className="text-white font-light">{advantage}</span>
-              </div>
-            ))}
-          </div>
-        </Card>
+          <Card className="p-6 md:p-8 bg-secondary text-white border-none">
+            <h3 className="text-2xl font-bold mb-4">{t.advantagesTitle}</h3>
+            <div className="grid grid-cols-1 gap-3">
+              {advantages.map((advantage, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-white shrink-0 mt-2" />
+                  <span className="text-white font-light text-sm">{advantage}</span>
+                </div>
+              ))}
+            </div>
+          </Card>
+        </div>
       </div>
     </section>
   );
