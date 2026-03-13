@@ -27,12 +27,12 @@ const About = () => {
       description: t.value1Desc
     },
     {
-      title: t.value2Title,
-      description: t.value2Desc
-    },
-    {
       title: t.value3Title,
       description: t.value3Desc
+    },
+    {
+      title: t.value2Title,
+      description: t.value2Desc
     },
     {
       title: t.value4Title,
