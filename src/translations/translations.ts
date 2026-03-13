@@ -259,6 +259,7 @@ export const translations = {
       institutional3: "",
       institutional4: "",
       sectorsTitle: "Sectors of intervention",
+      sectorsDesc: "Our team members have contributed, over the course of their respective careers, to large-scale infrastructure, investment and development projects in Africa and Europe.\n\nThis experience covers in particular the structuring and negotiation of complex projects, advising investors and financial institutions, and supporting international stakeholders in demanding regulatory and institutional environments.\n\nRepresentative references can be made available upon request, in a confidential manner adapted to the nature of the discussions.",
       sector1Title: "Infrastructure & transport",
       sector1Desc: "Roads, highways, bridges, rail, urban mobility, ports and airports.",
       sector2Title: "Energy",
