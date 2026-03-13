@@ -40,13 +40,10 @@ const Services = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             {t.title}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-2">
             {t.subtitle}
           </p>
-        </div>
-
-        <div className="mb-12 max-w-4xl mx-auto">
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             {t.intro}
           </p>
         </div>
