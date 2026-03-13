@@ -38,6 +38,8 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
+    --advantages-bg: 220 15% 85%;
+
     /* Custom design tokens */
     --navy: 220 40% 20%;
     --navy-light: 220 35% 30%;
