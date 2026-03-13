@@ -67,13 +67,13 @@ const Services = () => {
             <p className="text-muted-foreground">{t.mandateIntro}</p>
           </Card>
 
-          <Card className="p-6 bg-secondary text-white border-none">
-            <h3 className="text-xl font-bold mb-4">{t.advantagesTitle}</h3>
+          <Card className="p-6 border-none" style={{ backgroundColor: 'hsl(var(--advantages-bg))' }}>
+            <h3 className="text-xl font-bold text-card-foreground mb-4">{t.advantagesTitle}</h3>
             <div className="grid grid-cols-1 gap-2">
               {advantages.map((advantage, index) => (
                 <div key={index} className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-white shrink-0 mt-2" />
-                  <span className="text-white font-light text-sm">{advantage}</span>
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-2" />
+                  <span className="text-muted-foreground font-light text-sm">{advantage}</span>
                 </div>
               ))}
             </div>
