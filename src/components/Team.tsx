@@ -97,9 +97,7 @@ const TeamExpertise = () => {
             <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
               {t.provenTitle}
             </h3>
-            <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              {t.provenDesc}
-            </p>
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
