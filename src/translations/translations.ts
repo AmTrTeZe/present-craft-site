@@ -25,15 +25,15 @@ export const translations = {
       distinction2Desc: "Notre connaissance approfondie des exigences administratives, des cadres réglementaires et des processus applicables nous permet d'anticiper les points de vigilance, de structurer les démarches avec méthode et de présenter des dossiers solides et complets dès leur première soumission, favorisant une exécution fluide et conforme des projets.",
       distinction3Title: "Une capacité de coordination institutionnelle",
       distinction3Desc: "Nous savons comment engager un dialogue productif avec les administrations et autorités sectorielles, et surtout comment le maintenir dans la durée.\n\nDans un environnement où l'avancement d'un projet dépend souvent de la qualité et de la continuité des échanges institutionnels, cette capacité constitue un atout déterminant et permet de lever les points de friction, sécuriser les processus et favoriser l'avancement effectif des projets dans un cadre rigoureux et conforme.",
-      valuesTitle: "Nos Valeurs",
-      value1Title: "Intégrité et conformité",
-      value1Desc: "Nous conduisons nos missions dans le respect des réglementations applicables et des standards internationaux d'intégrité. Notre approche repose sur la transparence, la rigueur et le professionnalisme dans l'ensemble de nos interventions.",
-      value2Title: "Efficacité d'exécution",
-      value2Desc: "Nous privilégions une organisation agile, une forte réactivité et une exécution rigoureuse. Notre objectif est d'apporter à nos clients des solutions concrètes, lisibles et orientées résultats.",
+      valuesTitle: "Nos engagements",
+      value1Title: "Conformité et intégrité",
+      value1Desc: "Nos clients évoluent dans des environnements soumis aux exigences les plus strictes en matière de conformité et de prévention de la corruption. C'est aussi notre standard. Nous conduisons nos missions dans le respect des réglementations applicables et des standards internationaux d'intégrité, dans le cadre de mandats documentés et auditables de bout en bout.",
+      value2Title: "Clarté d'exécution",
+      value2Desc: "Nous privilégions une organisation agile, un interlocuteur dédié, des livrables précis, une forte réactivité et une exécution rigoureuse. Notre objectif est d'apporter à nos clients des solutions concrètes, lisibles, actionnables et orientées résultats.",
       value3Title: "Confidentialité et discrétion",
-      value3Desc: "Nous attachons une importance particulière à la confidentialité des informations qui nous sont confiées. Nous veillons à protéger avec le plus haut degré de discrétion les projets, échanges et intérêts de nos clients.",
+      value3Desc: "Nous accordons une importance particulière à la confidentialité des informations, des échanges et des éléments sensibles qui nous sont confiés. Nous menons nos interventions avec la discrétion requise dans les interactions avec les parties prenantes publiques et privées, afin de préserver les intérêts de nos clients à chaque étape du projet.",
       value4Title: "Engagement dans la durée",
-      value4Desc: "Au-delà des missions ponctuelles, nous privilégions des relations de confiance inscrites dans le temps, fondées sur la compréhension des enjeux, la qualité d'exécution et la constance de l'accompagnement."
+      value4Desc: "Nous construisons des relations de travail inscrites dans la durée, fondées sur la compréhension des enjeux, la qualité d'exécution et la constance de l'accompagnement."
     },
     services: {
       title: "Accompagner vos projets en Côte d'Ivoire",
