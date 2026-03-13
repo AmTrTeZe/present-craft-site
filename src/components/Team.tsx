@@ -24,17 +24,11 @@ const Team = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             {t.title}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 whitespace-pre-line">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto whitespace-pre-line">
             {t.subtitle}
+            {"\n\n"}
+            {t.recognitionDesc}
           </p>
-          <div className="max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold text-primary mb-4">
-              {t.recognitionTitle}
-            </h3>
-            <p className="text-lg text-muted-foreground whitespace-pre-line">
-              {t.recognitionDesc}
-            </p>
-          </div>
         </div>
 
         {/* Row 1: Expertise juridique + Finance de projet */}
