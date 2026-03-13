@@ -95,7 +95,7 @@ const TeamExpertise = () => {
         <div className="space-y-16">
 
           <div>
-            <h3 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center">
+            <h3 className="text-4xl md:text-5xl font-bold text-secondary mb-6 text-center">
               {t.sectorsTitle}
             </h3>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-8 whitespace-pre-line">
