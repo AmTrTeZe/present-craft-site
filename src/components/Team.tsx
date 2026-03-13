@@ -30,7 +30,6 @@ const Team = () => {
             {t.recognitionDesc}
           </p>
         </div>
-        </div>
 
         {/* Row 1: Expertise juridique + Finance de projet */}
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
