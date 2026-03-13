@@ -14,7 +14,7 @@ export const translations = {
     },
     about: {
       title: "Le Cabinet",
-      paragraph1: "Lex Africa Consulting est un cabinet de conseil indépendant basé à Abidjan, spécialisé dans le conseil stratégique, la structuration de projets et les relations institutionnelles. Nous accompagnons les investisseurs internationaux, les promoteurs de projets et les entreprises étrangères dans la préparation, l'implantation et le développement de leurs activités en Côte d'Ivoire.",
+      paragraph1: "Lex Africa Consulting est un cabinet de conseil indépendant basé à Abidjan, spécialisé dans le conseil stratégique, la structuration de projets et les relations institutionnelles. Nous accompagnons les investisseurs internationaux, les promoteurs de projets et les entreprises étrangères dans la préparation, l'implantation, le développement et l'accélération de leurs activités en Côte d'Ivoire.",
       paragraph2: "Nos experts seniors pluridisciplinaires combinent expérience locale, parcours international et connaissance approfondie de l'environnement réglementaire, institutionnel et opérationnel ivoirien. Cette complémentarité nous permet d'intervenir sur les dimensions stratégiques, juridiques, financières et administratives propres aux projets d'investissement et de développement.",
       paragraph3: "Nous nous positionnons comme un partenaire local d'exécution et de coordination, capable de structurer les démarches, de fluidifier les échanges avec les parties prenantes pertinentes et d'accompagner nos clients dans leurs projets avec rigueur, discrétion et conformité.",
       paragraph4: "Lex Africa Consulting accompagne des investisseurs institutionnels, des opérateurs internationaux, des promoteurs de projets, des entreprises en expansion, ainsi que des partenaires publics et privés, dans leurs projets en Côte d'Ivoire et, plus largement, en Afrique de l'Ouest.",
@@ -170,7 +170,7 @@ export const translations = {
     },
     about: {
       title: "Our Firm",
-      paragraph1: "Lex Africa Consulting is an independent advisory firm based in Abidjan, specializing in strategic advisory, project structuring and institutional relations. We support international investors, project developers and foreign companies in the preparation, establishment and development of their activities in Côte d'Ivoire.",
+      paragraph1: "Lex Africa Consulting is an independent advisory firm based in Abidjan, specializing in strategic advisory, project structuring and institutional relations. We support international investors, project developers and foreign companies in the preparation, establishment, development and acceleration of their activities in Côte d'Ivoire.",
       paragraph2: "Our multidisciplinary senior experts combine local experience, international backgrounds and in-depth knowledge of the Ivorian regulatory, institutional and operational environment. This complementarity enables us to address the strategic, legal, financial and administrative dimensions specific to investment and development projects.",
       paragraph3: "We position ourselves as a local execution and coordination partner, capable of structuring processes, facilitating exchanges with relevant stakeholders and supporting our clients in their projects with rigor, discretion and compliance.",
       paragraph4: "Lex Africa Consulting supports institutional investors, international operators, project developers, expanding businesses, as well as public and private partners, in their projects in Côte d'Ivoire and, more broadly, in West Africa.",
