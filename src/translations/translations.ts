@@ -170,7 +170,7 @@ export const translations = {
     },
     about: {
       title: "Our Firm",
-      paragraph1: "Lex Africa Consulting is an independent advisory firm based in Abidjan, specializing in strategic advisory, project structuring and institutional relations. We support international investors, project developers and foreign companies in the preparation, establishment and development of their activities in Côte d'Ivoire.",
+      paragraph1: "Lex Africa Consulting is an independent advisory firm based in Abidjan, specializing in strategic advisory, project structuring and institutional relations. We support international investors, project developers and foreign companies in the preparation, establishment, development and acceleration of their activities in Côte d'Ivoire.",
       paragraph2: "Our multidisciplinary senior experts combine local experience, international backgrounds and in-depth knowledge of the Ivorian regulatory, institutional and operational environment. This complementarity enables us to address the strategic, legal, financial and administrative dimensions specific to investment and development projects.",
       paragraph3: "We position ourselves as a local execution and coordination partner, capable of structuring processes, facilitating exchanges with relevant stakeholders and supporting our clients in their projects with rigor, discretion and compliance.",
       paragraph4: "Lex Africa Consulting supports institutional investors, international operators, project developers, expanding businesses, as well as public and private partners, in their projects in Côte d'Ivoire and, more broadly, in West Africa.",
