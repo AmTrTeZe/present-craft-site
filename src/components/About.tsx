@@ -45,7 +45,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               {t.title}
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
