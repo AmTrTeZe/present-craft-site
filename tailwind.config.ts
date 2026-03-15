@@ -54,6 +54,7 @@ export default {
         "navy-light": "hsl(var(--navy-light))",
         gold: "hsl(var(--gold))",
         "gold-light": "hsl(var(--gold-light))",
+        anthracite: "hsl(var(--anthracite))",
       },
       borderRadius: {
         lg: "var(--radius)",
