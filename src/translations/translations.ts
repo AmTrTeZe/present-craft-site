@@ -81,6 +81,8 @@ export const translations = {
       expertise6Desc: "Nous intervenons sur les enjeux liés au droit du travail ivoirien, à l'organisation des ressources humaines locales et aux démarches liées à l'emploi de personnels expatriés.",
       expertise7Title: "Ingénierie et accompagnement sectoriel",
       expertise7Desc: "Nous mobilisons, selon les projets, des compétences techniques et sectorielles permettant d'éclairer les dimensions opérationnelles, réglementaires et d'exécution.",
+      expertise8Title: "Droit maritime",
+      expertise8Desc: "Nous intervenons sur les problématiques juridiques et réglementaires liées au transport maritime, aux activités portuaires, à la logistique et aux opérations de commerce international.",
       provenTitle: "Une expérience significative sur des projets complexes",
       provenDesc: "Les membres de notre équipe ont contribué, au cours de leurs parcours respectifs, à des projets d'infrastructure, d'investissement et de développement de grande ampleur en Afrique et en Europe.",
       projectsTitle: "Structuration et négociation de projets",
