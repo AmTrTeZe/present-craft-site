@@ -55,11 +55,12 @@ export const translations = {
       mandateIntro: "Notre accompagnement peut prendre la forme d'un appui ponctuel, d'une mission dédiée ou d'un dispositif plus intégré dans la durée, selon le stade d'avancement et les besoins du projet.\n\nAppui ponctuel : pour une problématique précise, une démarche ciblée ou un besoin particulier.\n\nMission dédiée : pour accompagner un projet sur une période définie, avec un périmètre, des objectifs et des livrables clairement établis.\n\nAccompagnement dans la durée : pour les acteurs qui souhaitent disposer d'un appui régulier dans la conduite de leurs démarches, le suivi de leurs enjeux et le développement de leurs activités. Cet accompagnement peut, le cas échéant, s'exercer dans le cadre d'un mandat couvrant tout ou partie des démarches nécessaires à la préparation, à l'implantation et au lancement du projet.\n\nIntervention en marque blanche : nous pouvons également intervenir en appui de cabinets d'avocats, de conseils financiers, de cabinets de stratégie ou d'autres structures recherchant un partenaire local rigoureux et discret.",
       advantagesTitle: "Ce que notre accompagnement vous apporte",
       advantage1: "Concentrer vos ressources sur votre cœur de métier, en nous déléguant la complexité locale",
-      advantage2: "Réduire les délais de vos démarches administratives et réglementaires",
+      advantage2: "Structurer vos démarches avec méthode et dans un cadre conforme",
       advantage3: "Présenter des dossiers solides et recevables dès la première soumission",
-      advantage4: "Disposer d'un interlocuteur local crédible auprès des autorités et des partenaires",
-      advantage5: "Bénéficier d'une mise en relation qualifiée avec les parties prenantes utiles à l'implantation et au développement de vos activités",
-      advantage6: "Sécuriser votre conformité tout au long du projet"
+      advantage4: "Réduire les délais et les points de friction dans le traitement de vos démarches",
+      advantage5: "Disposer d'un interlocuteur local crédible auprès des autorités, partenaires et parties prenantes utiles",
+      advantage6: "Identifier plus rapidement les partenaires, opportunités et financements utiles au développement de vos activités",
+      advantage7: "Sécuriser votre conformité tout au long du projet"
     },
     team: {
       title: "Notre équipe",
@@ -215,11 +216,12 @@ export const translations = {
       mandateIntro: "Our support can take the form of ad hoc assistance, a dedicated engagement or a more integrated arrangement over time, depending on the stage of progress and the needs of the project.\n\nAd hoc assistance: for a specific issue, a targeted approach or a particular need.\n\nDedicated engagement: to support a project over a defined period, with a clearly established scope, objectives and deliverables.\n\nOngoing support: for stakeholders who wish to have regular assistance in managing their processes, monitoring their issues and developing their activities. This support may, where appropriate, be provided under a mandate covering all or part of the steps required for project preparation, establishment and launch.\n\nWhite-label intervention: we can also provide support to law firms, financial advisors, strategy consultancies or other organisations seeking a rigorous and discreet local partner.",
       advantagesTitle: "What our support brings you",
       advantage1: "Focus your resources on your core business by delegating local complexity to us",
-      advantage2: "Reduce the timelines of your administrative and regulatory procedures",
+      advantage2: "Structure your processes methodically and within a compliant framework",
       advantage3: "Submit solid and admissible files from the first submission",
-      advantage4: "Have a credible local contact with authorities and partners",
-      advantage5: "Benefit from qualified introductions to stakeholders relevant to the establishment and development of your activities",
-      advantage6: "Secure your compliance throughout the project"
+      advantage4: "Reduce delays and friction points in the processing of your procedures",
+      advantage5: "Have a credible local contact with authorities, partners and relevant stakeholders",
+      advantage6: "Identify more quickly the partners, opportunities and financing useful for developing your activities",
+      advantage7: "Secure your compliance throughout the project"
     },
     team: {
       title: "Our Team",
