@@ -69,12 +69,16 @@ const Services = () => {
               <p className="text-muted-foreground">{service.description}</p>
             </Card>
           ))}
+        </div>
 
+        <div className="mt-6">
           <Card className="p-6 hover:shadow-lg transition-shadow bg-card border-none">
             <h3 className="text-xl font-bold text-card-foreground mb-3">{t.mandateTitle}</h3>
             <p className="text-muted-foreground whitespace-pre-line">{t.mandateIntro}</p>
           </Card>
+        </div>
 
+        <div className="mt-6">
           <Card className="p-6 border-none" style={{ backgroundColor: 'hsl(var(--advantages-bg))' }}>
             <h3 className="text-xl font-bold text-card-foreground mb-4">{t.advantagesTitle}</h3>
             <div className="grid grid-cols-1 gap-2">
