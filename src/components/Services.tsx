@@ -23,6 +23,14 @@ const Services = () => {
       title: t.service4Title,
       description: t.service4Desc,
     },
+    {
+      title: t.service5Title,
+      description: t.service5Desc,
+    },
+    {
+      title: t.service6Title,
+      description: t.service6Desc,
+    },
   ];
 
   const advantages = [
