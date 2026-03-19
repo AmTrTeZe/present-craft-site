@@ -40,6 +40,7 @@ const Services = () => {
     t.advantage4,
     t.advantage5,
     t.advantage6,
+    t.advantage7,
   ];
 
   return (

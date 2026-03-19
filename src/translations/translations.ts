@@ -216,11 +216,12 @@ export const translations = {
       mandateIntro: "Our support can take the form of ad hoc assistance, a dedicated engagement or a more integrated arrangement over time, depending on the stage of progress and the needs of the project.\n\nAd hoc assistance: for a specific issue, a targeted approach or a particular need.\n\nDedicated engagement: to support a project over a defined period, with a clearly established scope, objectives and deliverables.\n\nOngoing support: for stakeholders who wish to have regular assistance in managing their processes, monitoring their issues and developing their activities. This support may, where appropriate, be provided under a mandate covering all or part of the steps required for project preparation, establishment and launch.\n\nWhite-label intervention: we can also provide support to law firms, financial advisors, strategy consultancies or other organisations seeking a rigorous and discreet local partner.",
       advantagesTitle: "What our support brings you",
       advantage1: "Focus your resources on your core business by delegating local complexity to us",
-      advantage2: "Reduce the timelines of your administrative and regulatory procedures",
+      advantage2: "Structure your processes methodically and within a compliant framework",
       advantage3: "Submit solid and admissible files from the first submission",
-      advantage4: "Have a credible local contact with authorities and partners",
-      advantage5: "Benefit from qualified introductions to stakeholders relevant to the establishment and development of your activities",
-      advantage6: "Secure your compliance throughout the project"
+      advantage4: "Reduce delays and friction points in the processing of your procedures",
+      advantage5: "Have a credible local contact with authorities, partners and relevant stakeholders",
+      advantage6: "Identify more quickly the partners, opportunities and financing useful for developing your activities",
+      advantage7: "Secure your compliance throughout the project"
     },
     team: {
       title: "Our Team",
