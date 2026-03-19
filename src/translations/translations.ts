@@ -250,6 +250,8 @@ export const translations = {
       expertise6Desc: "We advise on issues related to Ivorian labor law, local human resources organization and procedures for employing expatriate personnel.",
       expertise7Title: "Engineering and sectoral support",
       expertise7Desc: "We mobilize, depending on the project, technical and sectoral capabilities to inform operational, regulatory and implementation dimensions.",
+      expertise8Title: "Maritime law",
+      expertise8Desc: "We advise on legal and regulatory issues related to maritime transport, port activities, logistics and international trade operations.",
       provenTitle: "Significant experience on complex projects",
       provenDesc: "Our team members have contributed, over the course of their respective careers, to large-scale infrastructure, investment and development projects in Africa and Europe.",
       projectsTitle: "Project structuring and negotiation",
