@@ -13,6 +13,7 @@ const Team = () => {
     { title: t.expertise3Title, description: t.expertise3Desc },
     { title: t.expertise4Title, description: t.expertise4Desc },
     { title: t.expertise5Title, description: t.expertise5Desc },
+    { title: t.expertise8Title, description: t.expertise8Desc },
     { title: t.expertise6Title, description: t.expertise6Desc },
     { title: t.expertise7Title, description: t.expertise7Desc },
   ];
@@ -51,17 +52,19 @@ const Team = () => {
           ))}
         </div>
 
-        {/* Row 3: Affaires publiques */}
-        <div className="max-w-4xl mx-auto mt-6">
-          <Card className="p-6 text-center bg-card border border-border">
-            <h3 className="text-lg font-bold text-card-foreground mb-2">{expertise[4].title}</h3>
-            <p className="text-sm text-muted-foreground">{expertise[4].description}</p>
-          </Card>
+        {/* Row 3: Affaires publiques + Droit maritime */}
+        <div className="grid md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
+          {expertise.slice(4, 6).map((item, index) => (
+            <Card key={index} className="p-6 text-center bg-card border border-border">
+              <h3 className="text-lg font-bold text-card-foreground mb-2">{item.title}</h3>
+              <p className="text-sm text-muted-foreground">{item.description}</p>
+            </Card>
+          ))}
         </div>
 
         {/* Row 4: Droit social + Ingénierie */}
         <div className="grid md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
-          {expertise.slice(5).map((item, index) => (
+          {expertise.slice(6).map((item, index) => (
             <Card key={index} className="p-6 text-center bg-card border border-border">
               <h3 className="text-lg font-bold text-card-foreground mb-2">{item.title}</h3>
               <p className="text-sm text-muted-foreground">{item.description}</p>
