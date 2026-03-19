@@ -12,9 +12,9 @@ const Team = () => {
     { title: t.expertise2Title, description: t.expertise2Desc },
     { title: t.expertise3Title, description: t.expertise3Desc },
     { title: t.expertise4Title, description: t.expertise4Desc },
-    { title: t.expertise5Title, description: t.expertise5Desc },
-    { title: t.expertise8Title, description: t.expertise8Desc },
     { title: t.expertise6Title, description: t.expertise6Desc },
+    { title: t.expertise8Title, description: t.expertise8Desc },
+    { title: t.expertise5Title, description: t.expertise5Desc },
     { title: t.expertise7Title, description: t.expertise7Desc },
   ];
 
