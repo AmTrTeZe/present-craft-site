@@ -87,6 +87,10 @@ const TeamExpertise = () => {
     { title: t.sector4Title, description: t.sector4Desc },
     { title: t.sector5Title, description: t.sector5Desc },
     { title: t.sector6Title, description: t.sector6Desc },
+    { title: t.sector7Title, description: t.sector7Desc },
+    { title: t.sector8Title, description: t.sector8Desc },
+    { title: t.sector9Title, description: t.sector9Desc },
+    { title: t.sector10Title, description: t.sector10Desc },
   ];
 
   return (
