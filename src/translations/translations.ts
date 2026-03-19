@@ -237,7 +237,7 @@ export const translations = {
       expertise4Title: "Taxation",
       expertise4Desc: "We advise on Ivorian and international tax issues, investment incentive regimes, tax treaties and structuring tailored to foreign investors.",
       expertise5Title: "Public affairs and institutional environment",
-      expertise5Desc: "We provide our clients with a thorough knowledge of the institutional environment and a command of public processes applicable to investment and development projects. This expertise enables us to understand the decision-making dynamics specific to each sector, identify relevant stakeholders, structure exchanges, anticipate and resolve friction points, and promote effective project progress in compliance with applicable requirements.",
+      expertise5Desc: "We provide our clients with a thorough knowledge of the institutional environment and a concrete command of public processes applicable to investment and development projects.\n\nThis expertise enables us to identify relevant stakeholders, understand the decision-making dynamics specific to each sector, structure exchanges, anticipate and resolve friction points and promote effective project progress in compliance with applicable requirements.",
       expertise6Title: "Employment law",
       expertise6Desc: "We advise on issues related to Ivorian labor law, local human resources organization and procedures for employing expatriate personnel.",
       expertise7Title: "Engineering and sectoral support",
