@@ -86,7 +86,7 @@ const Services = () => {
               {advantages.map((advantage, index) => (
                 <div key={index} className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-2" />
-                  <span className="text-muted-foreground font-light text-sm">{advantage}</span>
+                  <span className="text-muted-foreground font-light text-base">{advantage}</span>
                 </div>
               ))}
             </div>
