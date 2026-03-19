@@ -75,7 +75,13 @@ const Services = () => {
         <div className="mt-6">
           <Card className="p-6 hover:shadow-lg transition-shadow bg-card border-none">
             <h3 className="text-xl font-bold text-card-foreground mb-3">{t.mandateTitle}</h3>
-            <p className="text-muted-foreground whitespace-pre-line">{t.mandateIntro}</p>
+            <p className="text-muted-foreground whitespace-pre-line">
+              {t.mandateIntro.split(/(\bAppui ponctuel\b\s*:|Mission dédiée\s*:|Accompagnement dans la durée\s*:|Intervention en marque blanche\s*:|Ad hoc assistance\s*:|Dedicated engagement\s*:|Ongoing support\s*:|White-label intervention\s*:)/).map((part, i) =>
+                /^(Appui ponctuel|Mission dédiée|Accompagnement dans la durée|Intervention en marque blanche|Ad hoc assistance|Dedicated engagement|Ongoing support|White-label intervention)\s*:$/.test(part)
+                  ? <span key={i} className="font-medium">{part}</span>
+                  : <span key={i}>{part}</span>
+              )}
+            </p>
           </Card>
         </div>
 
