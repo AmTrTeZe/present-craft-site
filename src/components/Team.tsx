@@ -24,7 +24,7 @@ const Team = () => {
            <h2 className="text-4xl md:text-5xl font-bold text-anthracite mb-8">
             {t.title}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto whitespace-pre-line">
+          <p className="text-lg text-muted-foreground max-w-5xl mx-auto whitespace-pre-line">
             {t.subtitle}
             {"\n\n"}
             {t.recognitionDesc}
