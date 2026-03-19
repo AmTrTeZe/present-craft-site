@@ -105,8 +105,8 @@ const TeamExpertise = () => {
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto mb-8 whitespace-pre-line">
               {t.sectorsDesc}
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-              {sectors.map((sector, index) => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+              {sectors.slice(0, 9).map((sector, index) => (
                 <Card key={index} className="p-6 bg-background border-none shadow-sm">
                   <h4 className="text-lg font-bold text-card-foreground mb-2">
                     {sector.title}
@@ -115,16 +115,22 @@ const TeamExpertise = () => {
                 </Card>
               ))}
             </div>
-          </div>
-
-          <Card className="p-8 bg-background border-none shadow-sm">
-            <h3 className="text-2xl font-bold text-primary mb-6">
-              {t.standardsTitle}
-            </h3>
-            <p className="text-muted-foreground whitespace-pre-line">
-              {t.standardsDesc}
-            </p>
-          </Card>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Card className="p-6 bg-background border-none shadow-sm">
+                <h4 className="text-lg font-bold text-card-foreground mb-2">
+                  {sectors[9].title}
+                </h4>
+                <p className="text-sm text-muted-foreground">{sectors[9].description}</p>
+              </Card>
+              <Card className="p-8 bg-background border-none shadow-sm lg:col-span-2">
+                <h3 className="text-2xl font-bold text-primary mb-6">
+                  {t.standardsTitle}
+                </h3>
+                <p className="text-muted-foreground whitespace-pre-line">
+                  {t.standardsDesc}
+                </p>
+              </Card>
+            </div>
         </div>
       </div>
     </section>
