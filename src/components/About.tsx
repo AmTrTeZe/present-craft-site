@@ -57,7 +57,7 @@ const About = () => {
             <p className="text-lg text-muted-foreground mb-6">
               {t.paragraph3}
             </p>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-muted-foreground mb-6 whitespace-pre-line">
               {t.paragraph4}
             </p>
           </div>
