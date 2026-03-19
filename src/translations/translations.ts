@@ -187,7 +187,7 @@ export const translations = {
       distinction3Desc: "Many projects are slowed down by delays, poorly identified channels or breakdowns in follow-up. We know how to engage productive dialogue with government departments and sector authorities, and above all how to maintain it over time in order to resolve friction points. Because project progress often depends on the quality and continuity of institutional exchanges. We help our clients structure their interactions with relevant stakeholders, secure their procedures and create the conditions for smoother progress of matters, in compliance with applicable procedures.",
       valuesTitle: "Our Commitments",
       value1Title: "Compliance and integrity",
-      value1Desc: "Our clients operate in environments subject to the strictest compliance and anti-corruption requirements. This is also our standard. We conduct our engagements in compliance with applicable regulations and international integrity standards, within the framework of documented and fully auditable mandates.",
+      value1Desc: "Our clients operate in environments subject to the strictest compliance requirements. This is also our standard. We conduct our engagements in compliance with applicable regulations and international integrity standards, within the framework of documented and fully auditable mandates.",
       value2Title: "Clarity of execution",
       value2Desc: "We favor an agile organization, a dedicated point of contact, precise deliverables, strong responsiveness and rigorous execution. Our goal is to provide our clients with concrete, clear, actionable and results-oriented solutions.",
       value3Title: "Confidentiality and discretion",
