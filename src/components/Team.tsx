@@ -131,6 +131,7 @@ const TeamExpertise = () => {
                 </p>
               </Card>
             </div>
+          </div>
         </div>
       </div>
     </section>
