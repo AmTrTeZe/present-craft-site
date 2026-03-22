@@ -163,7 +163,7 @@ export const translations = {
       submittingBtn: "Envoi en cours...",
       successTitle: "Message envoyé !",
       successDesc: "Nous vous contacterons très prochainement.",
-      confidentialityNotice: "Les informations transmises via ce formulaire sont traitées de manière confidentielle."
+      confidentialityNotice: "Les informations transmises via ce formulaire sont sécurisées et traitées de manière confidentielle."
     },
     footer: {
       tagline: "Conseil stratégique · Structuration de projets · Relations institutionnelles",
@@ -334,7 +334,7 @@ export const translations = {
       submittingBtn: "Sending...",
       successTitle: "Message sent!",
       successDesc: "We will contact you very soon.",
-      confidentialityNotice: "Information submitted through this form is treated confidentially."
+      confidentialityNotice: "Information submitted through this form is secured and treated confidentially."
     },
     footer: {
       tagline: "Strategic Advisory · Project Structuring · Institutional Relations",
