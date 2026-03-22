@@ -334,7 +334,7 @@ export const translations = {
       submittingBtn: "Sending...",
       successTitle: "Message sent!",
       successDesc: "We will contact you very soon.",
-      confidentialityNotice: "Information submitted through this form is treated confidentially."
+      confidentialityNotice: "Information submitted through this form is secured and treated confidentially."
     },
     footer: {
       tagline: "Strategic Advisory · Project Structuring · Institutional Relations",
