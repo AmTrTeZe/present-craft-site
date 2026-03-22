@@ -10,7 +10,10 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('fr');
+  const [language, setLanguage] = useState<Language>(() => {
+    const browserLang = navigator.language.slice(0, 2).toLowerCase();
+    return browserLang === 'en' ? 'en' : 'fr';
+  });
 
   const toggleLanguage = () => {
     setLanguage(prev => prev === 'fr' ? 'en' : 'fr');
